@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drama - Wikipedia bahasa Indonesia, ensiklopedia bebas</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Linux Libertine,Georgia,Times,serif;font-size:14px;line-height:1.6;color:#202122;background:#fff}
+
+/* TOMBOL TONTON */
+.tonton-bar{background:#3366cc;padding:10px 0;text-align:center;position:sticky;top:0;z-index:999;box-shadow:0 2px 4px rgba(0,0,0,0.3)}
+.tonton-btn{background:#f8f400;color:#000;font-family:Arial,sans-serif;font-size:17px;font-weight:700;padding:11px 36px;border:2px solid #cc9900;border-radius:4px;cursor:pointer;text-decoration:none;letter-spacing:0.5px;display:inline-block;transition:background 0.15s,transform 0.1s}
+.tonton-btn:hover{background:#ffe000;transform:scale(1.03)}
+.tonton-btn:active{transform:scale(0.98)}
+
+/* HEADER */
+.wiki-top{display:flex;align-items:center;gap:16px;padding:8px 16px;border-bottom:1px solid #a2a9b1;background:#fff}
+.wiki-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.wiki-logo-text{display:flex;flex-direction:column}
+.wiki-logo-name{font-family:Linux Libertine,Georgia,serif;font-size:20px;color:#202122;font-weight:normal}
+.wiki-logo-tag{font-family:Arial,sans-serif;font-size:11px;color:#54595d}
+.wiki-search{flex:1;max-width:500px;margin-left:auto;display:flex}
+.wiki-search input{flex:1;padding:5px 8px;border:1px solid #a2a9b1;border-right:none;font-size:13px;border-radius:2px 0 0 2px;outline:none;font-family:Arial,sans-serif}
+.wiki-search input:focus{border-color:#3366cc;box-shadow:0 0 0 1px #3366cc}
+.wiki-search button{background:#f8f9fa;border:1px solid #a2a9b1;padding:5px 12px;cursor:pointer;border-radius:0 2px 2px 0;font-size:13px;color:#202122;font-family:Arial,sans-serif}
+.wiki-nav{background:#f8f9fa;border-bottom:1px solid #a2a9b1;padding:0 16px;display:flex;gap:0;font-family:Arial,sans-serif;font-size:12px}
+.wiki-nav a{display:inline-block;padding:6px 12px;color:#3366cc;text-decoration:none;border-bottom:2px solid transparent}
+.wiki-nav a.active{border-bottom:2px solid #3366cc;color:#202122}
+.wiki-nav a:hover{background:#e8e8e8}
+
+/* LAYOUT */
+.main-layout{display:flex;max-width:1200px;margin:0 auto;padding:0}
+.sidebar{width:200px;min-width:200px;padding:12px 0 12px 12px;font-size:12px;font-family:Arial,sans-serif}
+.sidebar-box{background:#f8f9fa;border:1px solid #a2a9b1;padding:8px;margin-bottom:10px;border-radius:2px}
+.sidebar-title{background:#cee0f2;font-weight:bold;font-size:12px;padding:4px 8px;margin:-8px -8px 8px -8px;border-bottom:1px solid #a2a9b1;text-align:center}
+.sidebar ul{padding-left:14px}
+.sidebar li{margin:2px 0}
+.sidebar a{color:#3366cc;text-decoration:none}
+.sidebar a:hover{text-decoration:underline}
+
+/* CONTENT */
+.content{flex:1;padding:12px 16px 24px;min-width:0}
+.content h1{font-family:Linux Libertine,Georgia,Times,serif;font-size:28px;font-weight:normal;border-bottom:1px solid #a2a9b1;padding-bottom:4px;margin-bottom:10px;color:#000}
+.content h2{font-family:Linux Libertine,Georgia,Times,serif;font-size:20px;font-weight:normal;border-bottom:1px solid #a2a9b1;padding-bottom:2px;margin:20px 0 8px;color:#000}
+.content h3{font-family:Linux Libertine,Georgia,Times,serif;font-size:16px;font-weight:bold;margin:16px 0 6px;color:#000}
+.content p{margin-bottom:10px;text-align:justify}
+.content a{color:#3366cc;text-decoration:none}
+.content a:hover{text-decoration:underline}
+.content ul,.content ol{padding-left:24px;margin-bottom:10px}
+.content li{margin:4px 0}
+
+/* INFOBOX */
+.infobox{float:right;clear:right;margin:0 0 12px 16px;background:#f8f9fa;border:1px solid #a2a9b1;font-size:12px;font-family:Arial,sans-serif;width:200px}
+.infobox-title{background:#cee0f2;text-align:center;font-weight:bold;padding:6px;border-bottom:1px solid #a2a9b1;font-size:13px}
+
+/* THUMB IMAGE */
+.thumb{float:right;clear:right;margin:0 0 12px 16px;background:#f8f9fa;border:1px solid #a2a9b1;font-size:11px;font-family:Arial,sans-serif;max-width:220px}
+.thumb img{width:100%;display:block}
+.thumb-caption{padding:4px 6px;text-align:center;color:#54595d}
+
+/* TOC */
+.toc{background:#f8f9fa;border:1px solid #a2a9b1;padding:10px 14px;display:inline-block;font-size:13px;font-family:Arial,sans-serif;margin:0 0 16px 0;min-width:180px}
+.toc-title{font-weight:bold;text-align:center;margin-bottom:6px}
+.toc ol{padding-left:20px}
+.toc li{margin:2px 0}
+.toc a{color:#3366cc;text-decoration:none}
+.toc a:hover{text-decoration:underline}
+
+/* FOOTER */
+.wiki-footer{background:#f8f9fa;border-top:1px solid #a2a9b1;padding:16px;font-size:12px;font-family:Arial,sans-serif;color:#54595d;text-align:center}
+.wiki-footer a{color:#3366cc;text-decoration:none}
+.wiki-footer ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:4px 16px;margin-bottom:8px}
+
+sup{font-size:10px;color:#3366cc;cursor:default}
+
+@media(max-width:700px){
+  .sidebar{display:none}
+  .infobox,.thumb{float:none;width:100%;max-width:100%;margin:0 0 12px 0}
+  .wiki-search{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- TOMBOL TONTON SEKARANG -->
+<div class="tonton-bar">
+  <a href="LINK_ANDA_DISINI" class="tonton-btn">▶ TONTON SEKARANG!!</a>
+</div>
+
+<!-- HEADER WIKIPEDIA -->
+<div class="wiki-top">
+  <a class="wiki-logo" href="#">
+    <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="25" cy="25" r="24" fill="none" stroke="#a2a9b1" stroke-width="1"/>
+      <text x="25" y="33" text-anchor="middle" font-size="24" font-family="Linux Libertine,Georgia,serif" fill="#202122">W</text>
+    </svg>
+    <div class="wiki-logo-text">
+      <span class="wiki-logo-name">Wikipedia</span>
+      <span class="wiki-logo-tag">Ensiklopedia Bebas</span>
+    </div>
+  </a>
+  <div class="wiki-search">
+    <input type="text" placeholder="Telusuri Wikipedia" value="Drama">
+    <button>Cari</button>
+  </div>
+</div>
+<div class="wiki-nav">
+  <a href="#" class="active">Halaman</a>
+  <a href="#">Pembicaraan</a>
+  <a href="#">Baca</a>
+  <a href="#">Sunting</a>
+  <a href="#">Lihat riwayat</a>
+</div>
+
+<!-- MAIN LAYOUT -->
+<div class="main-layout">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="sidebar-box">
+      <div class="sidebar-title">Sastra</div>
+      <b style="font-size:11px">Sastra lisan</b>
+      <ul>
+        <li><a href="#">Folklor</a>
+          <ul>
+            <li><a href="#">Dongeng</a></li>
+            <li><a href="#">Legenda</a></li>
+            <li><a href="#">Mitos</a></li>
+            <li><a href="#">Peribahasa</a></li>
+            <li><a href="#">Wiracarita</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Pidato</a></li>
+      </ul>
+      <br>
+      <b style="font-size:11px">Genre tertulis utama</b>
+      <ul>
+        <li><a href="#" style="font-weight:bold">Drama</a>
+          <ul>
+            <li><a href="#">Pementasan</a></li>
+            <li><a href="#">Komedi</a></li>
+            <li><a href="#">Tragedi</a></li>
+            <li><a href="#">Tragikomedi</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Puisi</a>
+          <ul>
+            <li><a href="#">Epik</a></li>
+            <li><a href="#">Lirik</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Prosa</a>
+          <ul>
+            <li><a href="#">Cerita pendek</a></li>
+            <li><a href="#">Novel / Roman</a></li>
+            <li><a href="#">Novela</a></li>
+          </ul>
+        </li>
+      </ul>
+      <br>
+      <b style="font-size:11px">Fiksi</b>
+      <ul>
+        <li><a href="#">Bacaan anak</a></li>
+        <li><a href="#">Cerita cinta</a></li>
+        <li><a href="#">Fiksi sejarah</a></li>
+        <li><a href="#">Fantasi</a></li>
+        <li><a href="#">Fiksi ilmiah</a></li>
+        <li><a href="#">Satir</a></li>
+      </ul>
+      <br>
+      <b style="font-size:11px">Diskusi</b>
+      <ul>
+        <li><a href="#">Kritik</a></li>
+        <li><a href="#">Teori</a></li>
+        <li><a href="#">Sosiologi</a></li>
+        <li><a href="#">Majalah</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- KONTEN UTAMA -->
+  <div class="content">
+    <h1>Drama</h1>
+
+    <div class="infobox">
+      <div class="infobox-title">Sastra</div>
+      <div style="padding:8px;font-size:11px">
+        <b>Genre tertulis utama</b><br>
+        <a href="#">Drama</a> · <a href="#">Puisi</a> · <a href="#">Prosa</a><br><br>
+        <b>Jenis Drama</b><br>
+        <a href="#">Tragedi</a> · <a href="#">Komedi</a> · <a href="#">Melodrama</a><br><br>
+        <b>Struktur</b><br>
+        <a href="#">Babak</a> · <a href="#">Adegan</a> · <a href="#">Dialog</a><br><br>
+        <b>Diskusi</b><br>
+        <a href="#">Kritik</a> · <a href="#">Teori</a> · <a href="#">Sosiologi</a>
+      </div>
+    </div>
+
+    <p><b>Drama</b> adalah genre (jenis) karya <a href="#">sastra</a> yang menggambarkan kehidupan manusia dengan <a href="#">gerak</a>.<sup>[1][2][3]</sup> Drama menggambarkan realitas kehidupan, watak, serta tingkah laku manusia melalui peran dan <a href="#">dialog</a> yang dipentaskan.<sup>[1]</sup> Kisah dan cerita dalam drama memuat konflik dan emosi yang secara khusus ditujukan untuk pementasan <a href="#">teater</a>.<sup>[1]</sup> Naskah drama dibuat sedemikian rupa sehingga nantinya dapat dipentaskan untuk dapat dinikmati oleh penonton.<sup>[4]</sup> Drama memerlukan kualitas komunikasi, situasi dan aksi.<sup>[5]</sup> Kualitas tersebut dapat dilihat dari bagaimana sebuah <a href="#">konflik</a> atau masalah dapat disajikan secara utuh dan dalam pada sebuah pementasan drama.<sup>[5]</sup></p>
+
+    <div class="thumb">
+      <svg viewBox="0 0 220 146" xmlns="http://www.w3.org/2000/svg" width="220" height="146">
+        <rect width="220" height="146" fill="#1a1a2e"/>
+        <ellipse cx="110" cy="85" rx="85" ry="52" fill="#16213e"/>
+        <rect x="35" y="62" width="150" height="5" rx="2.5" fill="#e94560" opacity="0.6"/>
+        <circle cx="78" cy="78" r="22" fill="#0f3460" stroke="#e94560" stroke-width="1.5"/>
+        <circle cx="142" cy="78" r="22" fill="#0f3460" stroke="#e94560" stroke-width="1.5"/>
+        <rect x="90" y="105" width="40" height="20" rx="2" fill="#0f3460"/>
+        <rect x="95" y="100" width="30" height="3" rx="1.5" fill="#e94560" opacity="0.5"/>
+      </svg>
+      <div class="thumb-caption">Drama, cerita dalam bentuk gerak</div>
+    </div>
+
+    <div class="toc">
+      <div class="toc-title">Daftar isi</div>
+      <ol>
+        <li><a href="#pengertian">Pengertian</a></li>
+        <li><a href="#struktur">Struktur</a></li>
+        <li><a href="#unsur">Unsur-unsur</a></li>
+        <li><a href="#jenis">Jenis</a>
+          <ol>
+            <li><a href="#tragedi">Drama tragedi</a></li>
+            <li><a href="#komedi">Drama komedi</a></li>
+            <li><a href="#melodrama">Melodrama</a></li>
+          </ol>
+        </li>
+        <li><a href="#rujukan">Rujukan</a></li>
+      </ol>
+    </div>
+
+    <h2 id="pengertian">Pengertian</h2>
+    <p>Istilah untuk drama pada masa penjajahan Belanda di Indonesia disebut dengan istilah <i>tonil</i>.<sup>[5]</sup> Tonil kemudian berkembang diganti dengan istilah sandiwara oleh <a href="#">P.K.G Mangkunegara VII</a>.<sup>[5]</sup> Sandiwara berasal dari kata dalam bahasa Jawa <i>sandi</i> dan <i>wara</i>.<sup>[5]</sup> Sandi artinya <a href="#">rahasia</a>, sedangkan wara (warah) artinya pengajaran.<sup>[5]</sup> Maka istilah sandiwara mengandung makna pengajaran yang dilakukan dengan perlambang.<sup>[5]</sup></p>
+    <p>Sementara itu, pengertian drama modern dan tradisional harus dibedakan. Dalam drama modern, aktivitas drama menggunakan naskah dialog, sedangkan drama tradisional menggunakan improvisasi dalam dialognya.<sup>[6]</sup></p>
+
+    <h2 id="struktur">Struktur</h2>
+    <p>Drama merupakan sebuah karya yang memuat nilai artistik yang tinggi.<sup>[4]</sup> Sebuah drama mengikuti struktur <a href="#">alur</a> yang tertata.<sup>[4]</sup> Struktur yang tertata akan membantu penonton menikmati sebuah drama yang dipentaskan. Struktur drama memuat babak, adegan, dialog, prolog dan epilog.<sup>[4]</sup> Babak merupakan istilah lain dari episode.<sup>[4]</sup> Setiap babak memuat satu keutuhan kisah kecil yang menjadi keseluruhan drama.<sup>[4]</sup> Dengan kata lain, babak merupakan bagian dari naskah drama yang merangkum sebuah peristiwa yang terjadi di suatu tempat dengan urutan waktu tertentu.<sup>[4]</sup></p>
+    <p>Adegan merupakan bagian dari drama yang menunjukkan perubahan peristiwa.<sup>[4]</sup> Perubahan peristiwa ini ditandai dengan pergantian tokoh atau setting tempat dan waktu.<sup>[4]</sup> Misalnya, dalam adegan pertama terdapat tokoh A sedang berbicara dengan tokoh B. Kemudian mereka berjalan ke tempat lain lalu bertemu dengan tokoh C, maka terdapat perubahan adegan di dalamnya.<sup>[4]</sup></p>
+    <p>Dialog merupakan bagian dari naskah drama yang berupa percakapan antara satu tokoh dengan tokoh yang lain.<sup>[4]</sup> Dialog adalah bagian yang paling dominan dalam drama.<sup>[4]</sup> Selain itu, dialog adalah hal yang membedakan antara drama dengan jenis karya sastra yang lain.<sup>[4]</sup></p>
+    <p>Prolog dan epilog merupakan bingkai dari sebuah drama.<sup>[4]</sup> Prolog merupakan pengantar untuk masuk ke dalam sebuah drama.<sup>[4]</sup> Isinya adalah gambaran umum mengenai drama yang akan dimainkan.<sup>[4]</sup> Sementara epilog adalah bagian terakhir dari pementasan drama.<sup>[4]</sup> Isinya merupakan kesimpulan dari drama yang dimainkan. Epilog biasanya memuat makna dan pesan dari drama yang dimainkan.<sup>[4]</sup></p>
+
+    <h2 id="unsur">Unsur-unsur</h2>
+    <p>Ada tiga unsur penting dalam drama, diantaranya:</p>
+    <ul>
+      <li><b>Tokoh</b>, pelaku yang mempunyai peran yang lebih dibandingkan pelaku-pelaku lain, biasanya dikategorikan dalam sifat protagonis atau antagonis.</li>
+      <li><b>Wawacang</b>, dialog atau percakapan yang harus diucapkan oleh tokoh cerita.<sup>[7]</sup></li>
+      <li><b>Kramagung</b>, petunjuk perilaku, tindakan, atau perbuatan yang harus dilakukan oleh tokoh. Dalam naskah drama, kramagung dituliskan dalam tanda kurung (biasanya dicetak miring).<sup>[8]</sup></li>
+    </ul>
+
+    <h2 id="jenis">Jenis</h2>
+
+    <h3 id="tragedi">Drama tragedi</h3>
+    <p>Drama <a href="#">tragedi</a> adalah drama yang menceritakan kisah-kisah sedih dari para tokoh mulia. Kisah di dalam drama tragedi adalah perjuangan tokoh mulia yang menjadi pahlawan untuk menentang berbagai perlawanan terhadap dirinya. Penentangan ini bersifat tidak adil karena adanya perbedaan kekuatan. Cerita di dalam drama tragedi sangat serius sehingga menimbulkan rasa kasihan dan rasa takut.<sup>[9]</sup></p>
+
+    <h3 id="komedi">Drama komedi</h3>
+    <p>Drama <a href="#">komedi</a> adalah drama yang menampilkan cerita-cerita yang tidak terlalu serius tetapi lucu. Cerita berkaitan dengan peristiwa-peristiwa yang kemungkinan terjadi di dalam drama. Hal-hal lucu timbul dari kelakuan para tokoh dan tidak berkaitan dengan situasi cerita. Kelakuan yang lucu juga mengandung kebijaksanaan para tokoh.<sup>[9]</sup></p>
+
+    <h3 id="melodrama">Melodrama</h3>
+    <p><a href="#">Melodrama</a> memiliki kisah yang sangat serius. Dalam penceritaannya, muncul berbagai kejadian secara kebetulan. Cerita di dalam melodrama memunculkan rasa kasihan yang membuat penontonnya terbawa suasana.<sup>[9]</sup> Unsur-unsur seperti cinta yang terhalang, pengkhianatan, dan ketidakadilan sosial sering menjadi pusat cerita dalam melodrama.<sup>[10]</sup></p>
+
+    <h2 id="rujukan">Rujukan</h2>
+    <ol style="font-size:13px;font-family:Arial,sans-serif">
+      <li>Depdiknas (2008). <i>Kamus Besar Bahasa Indonesia</i>. Jakarta: Gramedia. hlm. 342-343. ISBN 978-979-22-3841-9.</li>
+      <li>Rene Wellek dan Austin Warren (2013). <i>Teori Kesusastraan</i>. Jakarta: Gramedia Pustaka Utama.</li>
+      <li>Tetti Melawati (2011). "Peningkatan Kemampuan Memahami Drama dan Menulis Teks Drama melalui Model Pembelajaran SAVI". UPI.</li>
+      <li>Suwardi Endraswara (2011). <i>Metode Pembelajaran Drama</i>. Yogyakarta: CAPS. hlm. 11-31.</li>
+      <li>Harymawan (1988). <i>Dramaturgi</i>. Bandung: Rosda.</li>
+      <li><a href="#">"Mencari Kedudukan Drama Modern di Indonesia"</a>. www.sastra.xyz. 2018-07-28.</li>
+      <li><a href="#">"Berita Drama Korea Terkini dan Terbaru Hari Ini - SINDOnews"</a>. www.sindonews.com. 2023-02-15.</li>
+      <li>Suherli, dkk. (2017). <i>Bahasa Indonesia Kelas XI</i>. Jakarta: Kementerian Pendidikan dan Kebudayaan.</li>
+      <li>Kosasih, E. (2008). <i>Apresiasi Sastra Indonesia</i>. Jakarta: Nobel Edumedia. hlm. 86.</li>
+      <li>Putra, Windah (2024-08-03). <a href="#">"Persiapan pementasan drama"</a>. kulitsehatnutrafor.com.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="wiki-footer">
+  <ul>
+    <li><a href="#">Kebijakan privasi</a></li>
+    <li><a href="#">Tentang Wikipedia</a></li>
+    <li><a href="#">Penyangkalan</a></li>
+    <li><a href="#">Kode Etik</a></li>
+    <li><a href="#">Pengembang</a></li>
+    <li><a href="#">Statistik</a></li>
+    <li><a href="#">Pernyataan kuki</a></li>
+  </ul>
+  <p>Halaman ini terakhir diubah pada 6 Februari 2026, pukul 11.30. &nbsp;·&nbsp; Teks tersedia di bawah <a href="#">Lisensi Atribusi-BerbagiSerupa Creative Commons</a>.</p>
+</div>
+
+</body>
+</html>
