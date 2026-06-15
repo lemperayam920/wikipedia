@@ -1,1640 +1,292 @@
-
-
-
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WADAH4D | Jadwal & Prediksi Bola Terupdate 2026</title>
-  <meta name="description" content="WADAH4D - Jadwal, hasil, prediksi, grup, dan kalkulator parlay Piala Dunia 2026." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drama - Wikipedia bahasa Indonesia, ensiklopedia bebas</title>
 <style>
-   :root{
-  --bg:#14051f;
-  --panel:#1d0b2d;
-  --panel2:#2a1042;
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Linux Libertine,Georgia,Times,serif;font-size:14px;line-height:1.6;color:#202122;background:#fff}
 
-  --gold:#ffd400;
-  --gold2:#ffe766;
+/* TOMBOL TONTON */
+.tonton-bar{background:#3366cc;padding:10px 0;text-align:center;position:sticky;top:0;z-index:999;box-shadow:0 2px 4px rgba(0,0,0,0.3)}
+.tonton-btn{background:#f8f400;color:#000;font-family:Arial,sans-serif;font-size:17px;font-weight:700;padding:11px 36px;border:2px solid #cc9900;border-radius:4px;cursor:pointer;text-decoration:none;letter-spacing:0.5px;display:inline-block;transition:background 0.15s,transform 0.1s}
+.tonton-btn:hover{background:#ffe000;transform:scale(1.03)}
+.tonton-btn:active{transform:scale(0.98)}
 
-  --green:#b86cff;
-  --green2:#d8a6ff;
+/* HEADER */
+.wiki-top{display:flex;align-items:center;gap:16px;padding:8px 16px;border-bottom:1px solid #a2a9b1;background:#fff}
+.wiki-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.wiki-logo-text{display:flex;flex-direction:column}
+.wiki-logo-name{font-family:Linux Libertine,Georgia,serif;font-size:20px;color:#202122;font-weight:normal}
+.wiki-logo-tag{font-family:Arial,sans-serif;font-size:11px;color:#54595d}
+.wiki-search{flex:1;max-width:500px;margin-left:auto;display:flex}
+.wiki-search input{flex:1;padding:5px 8px;border:1px solid #a2a9b1;border-right:none;font-size:13px;border-radius:2px 0 0 2px;outline:none;font-family:Arial,sans-serif}
+.wiki-search input:focus{border-color:#3366cc;box-shadow:0 0 0 1px #3366cc}
+.wiki-search button{background:#f8f9fa;border:1px solid #a2a9b1;padding:5px 12px;cursor:pointer;border-radius:0 2px 2px 0;font-size:13px;color:#202122;font-family:Arial,sans-serif}
+.wiki-nav{background:#f8f9fa;border-bottom:1px solid #a2a9b1;padding:0 16px;display:flex;gap:0;font-family:Arial,sans-serif;font-size:12px}
+.wiki-nav a{display:inline-block;padding:6px 12px;color:#3366cc;text-decoration:none;border-bottom:2px solid transparent}
+.wiki-nav a.active{border-bottom:2px solid #3366cc;color:#202122}
+.wiki-nav a:hover{background:#e8e8e8}
 
-  --text:#ffffff;
-  --muted:#f1e8ff;
+/* LAYOUT */
+.main-layout{display:flex;max-width:1200px;margin:0 auto;padding:0}
+.sidebar{width:200px;min-width:200px;padding:12px 0 12px 12px;font-size:12px;font-family:Arial,sans-serif}
+.sidebar-box{background:#f8f9fa;border:1px solid #a2a9b1;padding:8px;margin-bottom:10px;border-radius:2px}
+.sidebar-title{background:#cee0f2;font-weight:bold;font-size:12px;padding:4px 8px;margin:-8px -8px 8px -8px;border-bottom:1px solid #a2a9b1;text-align:center}
+.sidebar ul{padding-left:14px}
+.sidebar li{margin:2px 0}
+.sidebar a{color:#3366cc;text-decoration:none}
+.sidebar a:hover{text-decoration:underline}
 
-  --line:rgba(216,166,255,.35);
-  --shadow:rgba(184,108,255,.25);
+/* CONTENT */
+.content{flex:1;padding:12px 16px 24px;min-width:0}
+.content h1{font-family:Linux Libertine,Georgia,Times,serif;font-size:28px;font-weight:normal;border-bottom:1px solid #a2a9b1;padding-bottom:4px;margin-bottom:10px;color:#000}
+.content h2{font-family:Linux Libertine,Georgia,Times,serif;font-size:20px;font-weight:normal;border-bottom:1px solid #a2a9b1;padding-bottom:2px;margin:20px 0 8px;color:#000}
+.content h3{font-family:Linux Libertine,Georgia,Times,serif;font-size:16px;font-weight:bold;margin:16px 0 6px;color:#000}
+.content p{margin-bottom:10px;text-align:justify}
+.content a{color:#3366cc;text-decoration:none}
+.content a:hover{text-decoration:underline}
+.content ul,.content ol{padding-left:24px;margin-bottom:10px}
+.content li{margin:4px 0}
+
+/* INFOBOX */
+.infobox{float:right;clear:right;margin:0 0 12px 16px;background:#f8f9fa;border:1px solid #a2a9b1;font-size:12px;font-family:Arial,sans-serif;width:200px}
+.infobox-title{background:#cee0f2;text-align:center;font-weight:bold;padding:6px;border-bottom:1px solid #a2a9b1;font-size:13px}
+
+/* THUMB IMAGE */
+.thumb{float:right;clear:right;margin:0 0 12px 16px;background:#f8f9fa;border:1px solid #a2a9b1;font-size:11px;font-family:Arial,sans-serif;max-width:220px}
+.thumb img{width:100%;display:block}
+.thumb-caption{padding:4px 6px;text-align:center;color:#54595d}
+
+/* TOC */
+.toc{background:#f8f9fa;border:1px solid #a2a9b1;padding:10px 14px;display:inline-block;font-size:13px;font-family:Arial,sans-serif;margin:0 0 16px 0;min-width:180px}
+.toc-title{font-weight:bold;text-align:center;margin-bottom:6px}
+.toc ol{padding-left:20px}
+.toc li{margin:2px 0}
+.toc a{color:#3366cc;text-decoration:none}
+.toc a:hover{text-decoration:underline}
+
+/* FOOTER */
+.wiki-footer{background:#f8f9fa;border-top:1px solid #a2a9b1;padding:16px;font-size:12px;font-family:Arial,sans-serif;color:#54595d;text-align:center}
+.wiki-footer a{color:#3366cc;text-decoration:none}
+.wiki-footer ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:4px 16px;margin-bottom:8px}
+
+sup{font-size:10px;color:#3366cc;cursor:default}
+
+@media(max-width:700px){
+  .sidebar{display:none}
+  .infobox,.thumb{float:none;width:100%;max-width:100%;margin:0 0 12px 0}
+  .wiki-search{display:none}
 }
-    }
-    *{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
-body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:
-    radial-gradient(circle at 15% 0%, rgba(255,212,0,.18), transparent 30%),
-    radial-gradient(circle at 85% 10%, rgba(184,108,255,.22), transparent 35%),
-    linear-gradient(
-      180deg,
-      #3d1466 0%,
-      #250c40 45%,
-      #14051f 100%
-    );
-  color:#fff;
-  overflow-x:hidden;
-}
-    a{text-decoration:none;color:inherit}
-    .top-nav
-    }
-    .nav-inner{
-      max-width:1180px;margin:auto;
-      display:flex;align-items:center;justify-content:space-between;
-      padding:13px 18px;gap:14px;
-    }
-    .brand{
-      display:flex;align-items:center;gap:10px;font-weight:900;color:var(--gold);
-      letter-spacing:.6px;white-space:nowrap;
-      background:transparent!important;
-      border:0!important;
-    }
-    .brand-logo{
-      display:block;
-      height:44px;
-      width:auto;
-      max-width:245px;
-      object-fit:contain;
-      background:transparent!important;
-      mix-blend-mode:screen;
-      filter:brightness(1.22) contrast(1.35) saturate(1.15) drop-shadow(0 0 12px rgba(0,255,136,.38));
-    }
-    .brand-mark{
-      width:36px;height:36px;border-radius:50%;
-      display:grid;place-items:center;
-      background:linear-gradient(135deg,var(--gold2),#a87900);
-      color:#000;box-shadow:0 0 18px var(--shadow);
-    }
-    .nav-menu{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
-    .nav-menu a{
-      padding:9px 12px;border-radius:999px;
-      color:#eee;font-size:13px;font-weight:800;
-      border:1px solid transparent;
-    }
-    .nav-menu a:hover{border-color:var(--line);color:#000;background:var(--gold)}
-    .hero{
-      min-height:600px;
-      position:relative;
-      display:flex;align-items:stretch;
-      background:
-        linear-gradient(90deg,rgba(0,0,0,.04),rgba(0,40,15,.02),rgba(0,0,0,.01)),
-        url("https://i.ibb.co/yBSYQVdv/image.png") center top/cover no-repeat;
-      background-attachment:scroll;
-      border-bottom:1px solid rgba(0,255,136,.35);
-      box-shadow:inset 0 -42px 70px rgba(0,0,0,.40);
-    }
-    .hero-inner{
-      width:100%;max-width:1180px;margin:auto;
-      padding:0 22px;
-      display:block;
-      min-height:600px;
-    }
-    .hero-clean-left{min-height:600px;}
-    .label{
-      display:inline-block;color:var(--gold);font-weight:900;letter-spacing:1px;
-      text-transform:uppercase;margin-bottom:12px;font-size:13px;
-    }
-    .hero h1{
-      font-size:clamp(42px,7vw,86px);
-      line-height:.95;font-weight:1000;
-      text-transform:uppercase;
-      text-shadow:0 0 26px rgba(245,196,0,.32);
-    }
-    .gold-text{
-      background:linear-gradient(90deg,#fff6a6,var(--gold),#ff9d00,#fff4a0);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
-    }
-    .hero p{
-      max-width:620px;color:#e5e5e5;line-height:1.7;margin:18px 0 26px;font-size:16px;
-    }
-    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;
-      padding:14px 18px;border-radius:14px;font-weight:900;
-      border:1px solid var(--line);cursor:pointer;
-    }
-    .btn-gold{background:linear-gradient(135deg,var(--gold2),#f59e0b);color:#000;box-shadow:0 10px 28px var(--shadow)}
-    .btn-dark{background:rgba(0,0,0,.52);color:#fff}
-    .hero-card{
-      background:rgba(0,0,0,.72);
-      border:1px solid var(--line);
-      border-radius:28px;
-      padding:24px;
-      box-shadow:0 0 36px var(--shadow);
-    }
-    .hero-card h3{font-size:22px;margin-bottom:16px;color:var(--gold)}
-    .mini-match{display:grid;gap:12px}
-    .mini-row{
-      display:flex;align-items:center;justify-content:space-between;gap:14px;
-      padding:14px;border-radius:16px;background:rgba(255,255,255,.055);
-      border:1px solid rgba(255,255,255,.08);
-    }
-    .mini-row b{font-size:13px}.mini-row span{font-size:12px;color:#ddd}
-
-    .running-info{
-      position:relative;z-index:5;
-      max-width:1180px;margin:-86px auto 34px;
-      display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:0 22px;
-    }
-    .running-info div{
-      min-height:92px;
-      display:grid;grid-template-columns:54px 1fr;align-items:center;gap:14px;
-      background:linear-gradient(135deg,rgba(0,0,0,.78),rgba(4,38,20,.72));
-      border-top:1px solid rgba(255,255,255,.26);
-      border-bottom:1px solid rgba(0,255,136,.34);
-      border-left:1px solid rgba(255,255,255,.16);
-      padding:18px 22px;text-align:left;box-shadow:0 0 28px rgba(0,255,136,.16);
-      backdrop-filter:blur(8px);
-    }
-    .running-info div:first-child{border-radius:14px 0 0 14px;}
-    .running-info div:last-child{border-radius:0 14px 14px 0;border-right:1px solid rgba(255,255,255,.16);}
-    .running-info strong{display:block;font-size:13px;color:#fff;text-transform:uppercase;letter-spacing:.4px;line-height:1.35}
-    .running-info span{display:block;color:#e9fff4;font-size:12px;line-height:1.55;margin-top:4px}
-
-    .running-info .info-icon{font-size:34px;color:var(--gold);filter:drop-shadow(0 0 10px rgba(255,212,0,.48));}
-    .running-info p{margin:0;}
-    .section{padding:70px 22px;background:#051b10}
-    .section:nth-of-type(even){background:#051b10}
-    .section-inner{max-width:1180px;margin:auto}
-    .section-heading{text-align:center;max-width:760px;margin:0 auto 34px}
-    .section-heading h2,.section-copy h2{font-size:36px;margin-bottom:12px}
-    .section-heading p,.section-copy p{color:#ccc;line-height:1.6}
-    .two-column{display:grid;grid-template-columns:330px 1fr;gap:28px;align-items:start}
-    .section-copy{position:sticky;top:82px}
-    .filter-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
-    .filter-btn{
-      border:1px solid var(--line);background:#080808;color:#fff;padding:10px 14px;
-      border-radius:999px;cursor:pointer;font-weight:900;font-size:12px;
-    }
-    .filter-btn.is-active,.filter-btn:hover{background:var(--gold);color:#000}
-    .match-list{display:grid;gap:14px}
-    .match-item{
-      display:grid;grid-template-columns:165px 1fr 92px;gap:15px;align-items:center;
-      background:linear-gradient(135deg,#090909,#121212);
-      border:1px solid var(--line);border-radius:18px;padding:18px;
-      box-shadow:0 0 18px rgba(245,196,0,.1);
-    }
-    .match-item time{color:var(--gold);font-weight:900;font-size:13px;line-height:1.45}
-    .match-teams{display:flex;align-items:center;justify-content:center;gap:18px;width:100%}
-    .team-box{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-width:92px;max-width:120px}
-    .team-flag{
-      width:58px;height:40px;object-fit:cover;border-radius:6px;
-      border:1px solid rgba(255,255,255,.35);box-shadow:0 6px 16px rgba(0,0,0,.38);
-      background:#111;
-    }
-    .team-name{
-      margin-top:7px;color:#fff;font-size:11px;font-weight:900;line-height:1.15;
-      letter-spacing:.45px;text-transform:uppercase;word-break:normal;
-    }
-    .vs-center{
-      display:flex;align-items:center;justify-content:center;width:42px;height:42px;
-      border-radius:50%;background:#fff;color:#000;font-size:12px;font-weight:1000;
-      box-shadow:0 0 16px rgba(255,255,255,.18);flex-shrink:0;
-    }
-    .group-badge{
-      background:var(--gold)!important;color:#000!important;text-align:center;border-radius:999px;
-      padding:8px 10px!important;font-weight:900;font-size:11px;line-height:1.15;
-    }
-    .match-note{display:none}
-
-    .card-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:20px}
-    .prediction-card,.result-card,.group-card,.calc-card{
-      background:linear-gradient(180deg,#101010,#050505);border:1px solid rgba(245,196,0,.4);
-      border-radius:20px;padding:24px;box-shadow:0 0 22px rgba(245,196,0,.12);
-    }
-    .main-card{
-      background:
-        linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.95)),
-        url("https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=900&q=80") center/cover;
-    }
-    .card-label{color:var(--gold);font-size:12px;font-weight:900;text-transform:uppercase;margin-bottom:12px}
-    .prediction-title{font-size:18px;text-align:center;margin:14px 0 12px;color:#fff}
-    .prediction-card p{color:#ddd;line-height:1.55}
-    .score{
-      margin-top:16px;border-radius:16px;padding:14px;background:rgba(245,196,0,.12);
-      border:1px solid rgba(245,196,0,.3);display:flex;justify-content:space-between;align-items:center;
-    }
-    .score span{font-size:13px;color:#ddd}.score strong{font-size:24px;color:var(--gold)}
-    .percent-bars{display:grid;gap:9px;margin-top:16px}
-    .bar-row{display:grid;grid-template-columns:46px 1fr 38px;gap:8px;align-items:center;font-size:12px;color:#ddd}
-    .bar-track{height:8px;background:rgba(255,255,255,.12);border-radius:999px;overflow:hidden}
-    .bar-fill{height:100%;background:linear-gradient(90deg,var(--gold),#ff9800);border-radius:999px}
-
-    .result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .result-score{font-size:26px;color:var(--gold);font-weight:1000;text-align:center;margin:12px 0}
-    .table-wrap{overflow:auto;border-radius:18px;border:1px solid var(--line)}
-    table{width:100%;border-collapse:collapse;background:#080808;min-width:680px}
-    th,td{padding:13px 12px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left;font-size:13px}
-    th{color:#000;background:var(--gold);font-weight:900}
-    td{color:#eee}
-    .group-tabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:22px}
-
-    .calculator-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-    .calc-row{display:grid;gap:8px;margin-bottom:12px}
-    .calc-row label{font-size:13px;color:#ddd;font-weight:800}
-    .calc-row input,.calc-row select{
-      width:100%;padding:13px;border-radius:12px;border:1px solid var(--line);
-      background:#050505;color:#fff;outline:none;
-    }
-    .odds-list{display:grid;gap:10px}
-    .odds-item{display:grid;grid-template-columns:1fr 90px 38px;gap:10px;align-items:center}
-    .remove-leg{border:0;border-radius:10px;background:#2b2b2b;color:#fff;padding:11px;cursor:pointer}
-    .calc-result{
-      background:rgba(245,196,0,.12);border:1px solid var(--line);border-radius:18px;
-      padding:18px;display:grid;gap:12px;
-    }
-    .calc-result strong{font-size:30px;color:var(--gold)}
-    .link-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .link-card{
-      display:block;padding:22px;border-radius:18px;background:linear-gradient(135deg,#111,#050505);
-      border:1px solid var(--line);box-shadow:0 0 18px var(--shadow);
-    }
-    .link-card span{color:var(--gold);font-size:12px;font-weight:900}
-    .link-card h3{margin:8px 0;font-size:20px}
-    .link-card p{color:#ccc;font-size:14px}
-    .footer{text-align:center;padding:28px 18px;background:#000;color:#aaa;border-top:1px solid var(--line)}
-
-
-    @media(min-width:1000px){
-      .hero{background-size:cover;background-position:center center;}
-    }
-    @media(max-width:700px){
-      .brand-logo{height:36px;max-width:200px;}
-      .hero{background-position:center top;background-size:cover;}
-    }
-    @media(max-width:900px){
-      .hero-inner{grid-template-columns:1fr}
-      .two-column{grid-template-columns:1fr}
-      .section-copy{position:static}
-      .running-info{grid-template-columns:repeat(2,1fr)}
-      .card-grid,.result-grid,.calculator-grid,.link-grid{grid-template-columns:1fr}
-      .nav-inner{align-items:flex-start;flex-direction:column}
-      .nav-menu{justify-content:flex-start}
-      .brand-logo{height:36px;max-width:210px}
-      .hero-clean-left{display:none}
-    }
-    @media(max-width:700px){
-      .hero{min-height:auto}
-      .hero-inner{padding:56px 16px}
-      .section{padding:54px 14px}
-      .match-item{grid-template-columns:1fr;gap:14px;text-align:center;padding:18px 14px}
-      .match-teams{gap:12px}
-      .team-box{min-width:82px;max-width:104px}
-      .team-flag{width:54px;height:37px}
-      .team-name{font-size:10.5px}
-      .vs-center{width:38px;height:38px;font-size:11px}
-      .group-badge{display:inline-block;justify-self:center;max-width:150px;margin:auto}
-      .running-info{grid-template-columns:1fr}
-    }
-  
-
-    /* FINAL FIX: logo rapi, background lebih terang, Big Match dihapus tapi script lain tetap utuh */
-    .nav-inner{padding:10px 18px;min-height:76px;}
-    .brand{display:flex;align-items:center;background:transparent!important;border:0!important;padding:0!important;}
-    .brand-logo{
-      height:54px!important;
-      width:auto!important;
-      max-width:290px!important;
-      object-fit:contain!important;
-      filter:drop-shadow(0 0 16px rgba(245,196,0,.45))!important;
-      background:transparent!important;
-      border:0!important;
-      border-radius:0!important;
-    }
-    .hero{
-      background-size:cover!important;
-      background-position:center center!important;
-      background-repeat:no-repeat!important;
-      min-height:650px!important;
-    }
-    .hero-inner{
-      grid-template-columns:1fr!important;
-      max-width:1180px!important;
-      padding:95px 22px 95px!important;
-    }
-    .hero-card{display:none!important;}
-    .hero-clean-left{min-height:470px!important;}
-    @media(max-width:768px){
-      .nav-inner{min-height:auto;align-items:center;}
-      .brand-logo{height:42px!important;max-width:220px!important;}
-      .hero{min-height:560px!important;background-position:center top!important;}
-      .hero-inner{padding:60px 18px!important;}
-      .hero-clean-left{min-height:360px!important;}
-    }
-  
-    /* FINAL RAPIN VS: kolom home | VS | away dibuat sama lebar dan selalu center */
-    .match-item > div{
-      min-width:0 !important;
-    }
-    .match-teams{
-      display:grid !important;
-      grid-template-columns:132px 54px 132px !important;
-      align-items:center !important;
-      justify-content:center !important;
-      justify-items:center !important;
-      column-gap:18px !important;
-      width:100% !important;
-      margin:0 auto !important;
-    }
-    .team-box{
-      width:132px !important;
-      min-width:132px !important;
-      max-width:132px !important;
-      display:flex !important;
-      flex-direction:column !important;
-      align-items:center !important;
-      justify-content:flex-start !important;
-      text-align:center !important;
-      overflow:visible !important;
-    }
-    .team-flag{
-      width:58px !important;
-      height:40px !important;
-      display:block !important;
-      margin:0 auto !important;
-      object-fit:cover !important;
-    }
-    .team-name{
-      width:100% !important;
-      min-height:24px !important;
-      margin-top:7px !important;
-      text-align:center !important;
-      white-space:normal !important;
-      overflow-wrap:break-word !important;
-      word-break:normal !important;
-      font-size:10.5px !important;
-      line-height:1.12 !important;
-    }
-    .vs-center{
-      width:44px !important;
-      height:44px !important;
-      display:flex !important;
-      align-items:center !important;
-      justify-content:center !important;
-      align-self:center !important;
-      justify-self:center !important;
-      margin:0 auto !important;
-      transform:none !important;
-      position:relative !important;
-      z-index:2 !important;
-    }
-    @media(max-width:700px){
-      .match-teams{
-        grid-template-columns:104px 44px 104px !important;
-        column-gap:8px !important;
-      }
-      .team-box{
-        width:104px !important;
-        min-width:104px !important;
-        max-width:104px !important;
-      }
-      .team-flag{
-        width:52px !important;
-        height:36px !important;
-      }
-      .team-name{
-        font-size:9.5px !important;
-        min-height:22px !important;
-      }
-      .vs-center{
-        width:38px !important;
-        height:38px !important;
-        font-size:10px !important;
-      }
-    }
-
-    /* MOBILE BACKGROUND: tidak nge-freeze, bisa digeser horizontal di HP */
-    @media(max-width:768px){
-      html,body{
-        overflow-x:auto!important;
-        -webkit-overflow-scrolling:touch;
-      }
-      .top-nav{
-        min-width:980px;
-      }
-      .hero{
-        width:980px!important;
-        min-width:980px!important;
-        min-height:560px!important;
-        background-size:980px 100%!important;
-        background-position:left top!important;
-        background-repeat:no-repeat!important;
-        overflow:visible!important;
-      }
-      .hero-inner{
-        width:980px!important;
-        max-width:980px!important;
-      }
-    }
-
-    .auto-status{
-      margin-top:10px;
-      color:#bdbdbd;
-      font-size:12px;
-      font-weight:700;
-    }
-    .auto-status.ok{color:#8cff9b}
-    .auto-status.warn{color:#ffd65a}
-    .auto-status.err{color:#ff8d8d}
-
-  
-
-    /* PREMIUM BACKGROUND REVISION */
-    :root{
-      --bg:#07130d;
-      --panel:#102015;
-      --panel2:#14291b;
-      --line:rgba(245,196,0,.42);
-    }
-    body{
-      background:
-        radial-gradient(circle at 18% 8%, rgba(255,214,69,.18), transparent 28%),
-        radial-gradient(circle at 82% 18%, rgba(0,185,110,.16), transparent 32%),
-        linear-gradient(180deg,#0d2616 0%,#07130d 42%,#061009 100%)!important;
-    }
-    body::before{
-      content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
-      background:
-        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
-      background-size:42px 42px;opacity:.42;
-    }
-    body::after{
-      content:"";position:fixed;inset:auto 0 0 0;height:42vh;z-index:-1;pointer-events:none;
-      background:radial-gradient(ellipse at center bottom, rgba(19,118,59,.52), transparent 68%);
-    }
-    .top-nav{background:rgba(5,18,10,.82)!important}
-    .hero{background-blend-mode:normal,screen!important;}
-    .section,.match-card,.pred-card,.hasil-card,.link-card,.calc-card,.standings-card{
-      background:linear-gradient(180deg,rgba(17,42,26,.94),rgba(7,19,12,.96))!important;
-      box-shadow:0 18px 45px rgba(0,0,0,.26),0 0 34px rgba(245,196,0,.09)!important;
-    }
-
-
-    @media(max-width:768px){
-      .hero{min-height:420px;background-position:center top;background-size:cover;}
-      .hero-inner{min-height:420px;}
-      .hero-clean-left{min-height:420px;}
-      .running-info{margin:-42px auto 24px;grid-template-columns:1fr;gap:10px;}
-      .running-info div,.running-info div:first-child,.running-info div:last-child{border-radius:14px;border-right:1px solid rgba(255,255,255,.16);}
-      .brand-logo{height:38px;max-width:210px;}
-    }
-
-
-    /* MOBILE ONLY FIX - tampilan hero dibuat seperti versi desktop, tanpa mengubah desktop */
-    @media(max-width:768px){
-      body{
-        background:
-          radial-gradient(circle at top, rgba(0,255,136,.14), transparent 32%),
-          linear-gradient(180deg,#02140b,#020806) !important;
-      }
-
-      .top-nav{
-        background:linear-gradient(90deg,rgba(1,18,9,.96),rgba(5,42,21,.92),rgba(0,0,0,.88)) !important;
-      }
-
-      .nav-inner{
-        padding:9px 10px !important;
-        gap:8px !important;
-        align-items:center !important;
-        justify-content:center !important;
-      }
-
-      .brand{
-        width:100% !important;
-        justify-content:center !important;
-      }
-
-      .brand-logo{
-        height:38px !important;
-        max-width:230px !important;
-        mix-blend-mode:screen !important;
-        background:transparent !important;
-        filter:brightness(1.24) contrast(1.35) saturate(1.16) drop-shadow(0 0 12px rgba(0,255,136,.36)) !important;
-      }
-
-      .nav-menu{
-        width:100% !important;
-        justify-content:center !important;
-        gap:6px !important;
-      }
-
-      .nav-menu a{
-        padding:7px 9px !important;
-        font-size:11px !important;
-        border:1px solid rgba(0,255,136,.22) !important;
-        background:rgba(0,0,0,.20) !important;
-      }
-
-      .hero{
-        width:100% !important;
-        min-height:0 !important;
-        height:58vw !important;
-        max-height:430px !important;
-        background-size:100% auto !important;
-        background-position:center top !important;
-        background-repeat:no-repeat !important;
-        display:block !important;
-        overflow:hidden !important;
-        border-bottom:1px solid rgba(0,255,136,.28) !important;
-      }
-
-      .hero::before,
-      .hero::after{
-        display:none !important;
-        content:none !important;
-      }
-
-      .hero-inner{
-        display:block !important;
-        padding:0 !important;
-        max-width:100% !important;
-        width:100% !important;
-        height:100% !important;
-      }
-
-      .hero-clean-left{
-        display:block !important;
-        min-height:0 !important;
-        height:100% !important;
-        width:100% !important;
-        background:transparent !important;
-      }
-
-      .running-info{
-        width:calc(100% - 20px) !important;
-        margin:10px auto 0 !important;
-        padding:10px !important;
-        grid-template-columns:repeat(2,1fr) !important;
-        gap:8px !important;
-        border-radius:14px !important;
-        background:linear-gradient(135deg,rgba(2,20,11,.92),rgba(8,47,25,.86)) !important;
-        border:1px solid rgba(0,255,136,.25) !important;
-      }
-
-      .running-info div{
-        padding:8px 6px !important;
-        gap:7px !important;
-        align-items:center !important;
-      }
-
-      .info-icon{
-        font-size:20px !important;
-        min-width:24px !important;
-      }
-
-      .running-info strong{
-        font-size:10.5px !important;
-        line-height:1.15 !important;
-      }
-
-      .running-info span:not(.info-icon){
-        font-size:9.5px !important;
-        line-height:1.35 !important;
-      }
-    }
-
-    @media(max-width:430px){
-      .brand-logo{
-        height:34px !important;
-        max-width:205px !important;
-      }
-
-      .nav-menu a{
-        font-size:10px !important;
-        padding:6px 7px !important;
-      }
-
-      .hero{
-        height:59vw !important;
-        background-size:100% auto !important;
-        background-position:center top !important;
-      }
-
-      .running-info{
-        grid-template-columns:1fr 1fr !important;
-        gap:7px !important;
-      }
-    }
-
-</style>
-  <style>
-    /* === PAKSA HAPUS SEMUA LABEL ELEMENTS === */
-    .label { display: none !important; }
-
-    /* === HAPUS STICKY SECTION-COPY (sumber label ghost di hero) === */
-    .section-copy { position: static !important; top: auto !important; }
-
-    /* === PREDIKSI GRID === */
-    .pred-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px;}
-    .pred-card{background:linear-gradient(170deg,#101010,#060606);border:1px solid rgba(245,196,0,.38);border-radius:18px;padding:20px;box-shadow:0 0 20px rgba(245,196,0,.1);}
-    .pred-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;}
-    .pred-group-badge{background:var(--gold);color:#000;border-radius:999px;padding:3px 11px;font-size:11px;font-weight:900;}
-    .pred-date{color:#999;font-size:11px;}
-    .pred-teams{display:flex;align-items:center;justify-content:center;gap:10px;margin:10px 0 12px;}
-    .pred-flag{width:42px;height:29px;object-fit:cover;border-radius:5px;border:1px solid rgba(255,255,255,.2);display:block;margin:0 auto 5px;}
-    .pred-team-name{font-size:11px;font-weight:900;text-align:center;text-transform:uppercase;color:#fff;line-height:1.2;}
-    .pred-vs{width:34px;height:34px;border-radius:50%;background:#fff;color:#000;font-size:10px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-    .pred-winner-box{text-align:center;background:rgba(245,196,0,.1);border:1px solid rgba(245,196,0,.28);border-radius:10px;padding:8px 12px;margin:10px 0;}
-    .pred-winner-label{color:#999;font-size:10px;margin-bottom:3px;}
-    .pred-winner-val{color:var(--gold);font-size:13px;font-weight:900;}
-    .pred-score-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
-    .pred-score-label{color:#999;font-size:11px;}
-    .pred-score-val{color:var(--gold);font-size:17px;font-weight:900;}
-    .pred-bars{display:grid;gap:6px;}
-    .pred-bar-row{display:grid;grid-template-columns:32px 1fr 28px;gap:5px;align-items:center;font-size:10px;color:#bbb;}
-    .pred-bar-track{height:6px;background:rgba(255,255,255,.1);border-radius:999px;overflow:hidden;}
-    .pred-bar-fill{height:100%;background:linear-gradient(90deg,var(--gold),#ff9800);border-radius:999px;}
-    .pred-filter-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;justify-content:center;}
-
-    /* === HASIL - card untuk semua pertandingan === */
-    .hasil-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;}
-    .hasil-card{background:linear-gradient(170deg,#101010,#060606);border:1px solid rgba(245,196,0,.32);border-radius:16px;padding:18px;box-shadow:0 0 14px rgba(245,196,0,.08);}
-    .hasil-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;}
-    .hasil-group{color:var(--gold);font-size:11px;font-weight:900;text-transform:uppercase;}
-    .hasil-date{color:#999;font-size:11px;}
-    .hasil-teams-row{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:12px;}
-    .hasil-team{text-align:center;min-width:80px;}
-    .hasil-team-flag{width:46px;height:32px;object-fit:cover;border-radius:5px;border:1px solid rgba(255,255,255,.25);display:block;margin:0 auto 5px;}
-    .hasil-team-name{font-size:10px;font-weight:900;text-transform:uppercase;color:#eee;line-height:1.2;}
-    .hasil-score-box{background:rgba(245,196,0,.15);border:1px solid rgba(245,196,0,.35);border-radius:10px;padding:6px 16px;font-size:22px;font-weight:900;color:var(--gold);white-space:nowrap;}
-    .hasil-upcoming-box{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:6px 12px;font-size:12px;font-weight:700;color:#aaa;white-space:nowrap;text-align:center;line-height:1.4;}
-    .hasil-source{text-align:center;color:#4caf50;font-size:10px;margin-top:8px;}
-    .hasil-venue{text-align:center;color:#777;font-size:10px;margin-top:4px;}
-
-    /* === KLASEMEN === */
-    .standings-note{color:#aaa;font-size:12px;text-align:center;margin-bottom:14px;}
-  
-    /* === COVER labels baked into hero background image === */
-    .hero {
-      position: relative !important;
-    }
-    .hero::after {
-      content: "" !important;
-      position: absolute !important;
-      inset: 0 !important;
-      width: 100% !important; height: 100% !important;
-      background:
-        radial-gradient(circle at 70% 30%, rgba(255,220,75,0.28) 0%, rgba(255,220,75,0.10) 28%, transparent 58%),
-        linear-gradient(90deg, rgba(255,196,0,0.06) 0%, rgba(255,255,255,0.08) 52%, rgba(255,196,0,0.12) 100%) !important;
-      mix-blend-mode: screen !important;
-      pointer-events: none !important;
-      z-index: 1 !important;
-    }
-    .hero .hero-inner {
-      position: relative !important;
-      z-index: 2 !important;
-    }
-
-    @media(max-width:768px){
-      .hero{min-height:420px;background-position:center top;background-size:cover;}
-      .hero-inner{min-height:420px;}
-      .hero-clean-left{min-height:420px;}
-      .running-info{margin:-42px auto 24px;grid-template-columns:1fr;gap:10px;}
-      .running-info div,.running-info div:first-child,.running-info div:last-child{border-radius:14px;border-right:1px solid rgba(255,255,255,.16);}
-      .brand-logo{height:38px;max-width:210px;}
-    }
-</style>
-
-<style id="premium-bright-final-fix">
-  /* FINAL BRIGHT PREMIUM FIX - menghapus kesan hitam/gelap pada hero */
-  :root{
-    --bg:#160f04;
-    --panel:#1b1408;
-    --panel2:#221909;
-    --muted:#f1e6c9;
-  }
-  body{
-    background:
-      radial-gradient(circle at 20% 0%, rgba(255,219,86,.30), transparent 32%),
-      radial-gradient(circle at 84% 16%, rgba(255,171,33,.18), transparent 36%),
-      linear-gradient(180deg,#211405 0%,#120d05 48%,#0c0904 100%) !important;
-  }
-  .top-nav{
-    background:rgba(24,15,4,.78)!important;
-    box-shadow:0 8px 28px rgba(0,0,0,.18)!important;
-  }
-  .hero{
-    background-color:rgba(255,213,84,.16)!important;
-    background-blend-mode:screen,normal!important;
-    box-shadow:inset 0 -80px 130px rgba(255,196,0,.10)!important;
-  }
-  .hero::after{
-    display:block!important;
-    content:""!important;
-    position:absolute!important;
-    inset:0!important;
-    width:100%!important;
-    height:100%!important;
-    background:
-      radial-gradient(circle at 62% 30%, rgba(255,221,94,.32), transparent 36%),
-      radial-gradient(circle at 88% 48%, rgba(255,255,255,.15), transparent 28%),
-      linear-gradient(90deg, rgba(18,10,0,.10) 0%, rgba(255,210,65,.08) 45%, rgba(255,236,148,.16) 100%)!important;
-    mix-blend-mode:screen!important;
-    pointer-events:none!important;
-    z-index:1!important;
-  }
-  .hero .hero-inner{position:relative!important;z-index:2!important;}
-  .hero p{color:#f3ebd5!important;text-shadow:0 2px 12px rgba(0,0,0,.45)!important;}
-  .section{background:linear-gradient(180deg,#171005,#0e0a04)!important;}
-  .section:nth-of-type(even){background:linear-gradient(180deg,#1b1306,#100b04)!important;}
-
-    @media(max-width:768px){
-      .hero{min-height:420px;background-position:center top;background-size:cover;}
-      .hero-inner{min-height:420px;}
-      .hero-clean-left{min-height:420px;}
-      .running-info{margin:-42px auto 24px;grid-template-columns:1fr;gap:10px;}
-      .running-info div,.running-info div:first-child,.running-info div:last-child{border-radius:14px;border-right:1px solid rgba(255,255,255,.16);}
-      .brand-logo{height:38px;max-width:210px;}
-    }
-</style>
-
-<style id="hd-green-premium-final">
-  /* === WADAH4D HD GREEN PREMIUM FINAL ===
-     Background dibuat lebih terang/realistis, tema hijau dikembalikan,
-     dan background hitam logo header dibuat transparan lewat asset PNG baru. */
-  ::root{
-  --bg:#14051f;
-  --panel:#1d0b2d;
-  --panel2:#2a1042;
-
-  --gold:#ffd400;
-  --gold2:#ffe766;
-
-  --green:#b86cff;
-  --green2:#d8a6ff;
-
-  --text:#ffffff;
-  --muted:#f1e8ff;
-
-  --line:rgba(216,166,255,.35);
-  --shadow:rgba(184,108,255,.25);
-}
-
-  body{
-    background:
-      radial-gradient(circle at 18% 0%, rgba(0,208,132,.28), transparent 34%),
-      radial-gradient(circle at 85% 12%, rgba(245,196,0,.20), transparent 34%),
-      linear-gradient(180deg,#062316 0%,#03140d 52%,#020806 100%)!important;
-  }
-
-  .top-nav{
-    background:linear-gradient(90deg,rgba(3,27,18,.88),rgba(5,49,32,.82),rgba(3,23,15,.88))!important;
-    border-bottom:1px solid rgba(0,208,132,.50)!important;
-    box-shadow:0 10px 30px rgba(0,0,0,.24),0 0 22px rgba(0,208,132,.16)!important;
-  }
-
-  .brand-logo{
-    background:transparent!important;
-    border:0!important;
-    padding:0!important;
-    border-radius:0!important;
-    box-shadow:none!important;
-    filter:drop-shadow(0 0 10px rgba(0,208,132,.35)) drop-shadow(0 0 8px rgba(245,196,0,.25))!important;
-  }
-  .brand, .brand *{background-color:transparent!important;}
-
-  .nav-menu a:hover,
-  .filter-btn.is-active,.filter-btn:hover{
-    background:linear-gradient(135deg,var(--green2),var(--gold))!important;
-    color:#00150d!important;
-    border-color:rgba(255,221,53,.65)!important;
-  }
-
-  .hero{
-    position:relative!important;
-    overflow:hidden!important;
-    background-size:cover!important;
-    background-position:center top!important;
-    background-repeat:no-repeat!important;
-    background-blend-mode:normal!important;
-    box-shadow:inset 0 -75px 120px rgba(0,54,34,.30)!important;
-    isolation:isolate!important;
-  }
-
-  .hero::before{
-    content:""!important;
-    position:absolute!important;
-    inset:0!important;
-    background:
-      radial-gradient(circle at 58% 38%, rgba(255,222,78,.18), transparent 31%),
-      radial-gradient(circle at 72% 34%, rgba(0,255,154,.14), transparent 36%),
-      linear-gradient(90deg, rgba(0,28,18,.20) 0%, rgba(0,0,0,.02) 45%, rgba(0,54,34,.16) 100%)!important;
-    mix-blend-mode:screen!important;
-    pointer-events:none!important;
-    z-index:1!important;
-  }
-
-  .hero::after{
-    content:""!important;
-    position:absolute!important;
-    inset:0!important;
-    background:
-      linear-gradient(180deg, rgba(255,255,255,.05) 0%, transparent 38%, rgba(0,55,34,.18) 100%),
-      radial-gradient(circle at 13% 50%, rgba(0,0,0,.18), transparent 34%)!important;
-    mix-blend-mode:soft-light!important;
-    pointer-events:none!important;
-    z-index:1!important;
-  }
-
-  .hero .hero-inner{position:relative!important;z-index:3!important;}
-  .hero h1,.hero p,.eyebrow{ text-shadow:0 3px 14px rgba(0,0,0,.52)!important; }
-  .eyebrow{color:var(--gold)!important;}
-
-  .section{
-    background:linear-gradient(180deg,#062316 0%,#03140d 100%)!important;
-  }
-  .section:nth-of-type(even){
-    background:linear-gradient(180deg,#082b1b 0%,#04190f 100%)!important;
-  }
-  .match-card,.prediction-card,.group-card,.calc-box,.running-info div{
-    background:linear-gradient(180deg,rgba(8,45,29,.94),rgba(3,18,12,.96))!important;
-    border-color:rgba(0,208,132,.38)!important;
-    box-shadow:0 12px 28px rgba(0,0,0,.28),0 0 22px rgba(0,208,132,.10)!important;
-  }
-
-    @media(max-width:768px){
-      .hero{min-height:420px;background-position:center top;background-size:cover;}
-      .hero-inner{min-height:420px;}
-      .hero-clean-left{min-height:420px;}
-      .running-info{margin:-42px auto 24px;grid-template-columns:1fr;gap:10px;}
-      .running-info div,.running-info div:first-child,.running-info div:last-child{border-radius:14px;border-right:1px solid rgba(255,255,255,.16);}
-      .brand-logo{height:38px;max-width:210px;}
-    }
-</style>
-
-
-
-<style id="mobile-full-background-sejajar-final">
-  /* MOBILE FINAL: tampilan hero dibuat full seperti desktop, sejajar, tanpa mengubah desktop */
-  @media (max-width: 768px){
-    html, body{
-      width:100% !important;
-      max-width:100% !important;
-      overflow-x:hidden !important;
-      margin:0 !important;
-      padding:0 !important;
-      background:
-        radial-gradient(circle at top, rgba(0,255,136,.14), transparent 32%),
-        linear-gradient(180deg,#02140b,#020806) !important;
-    }
-
-    .top-nav,
-    .nav-inner,
-    .hero,
-    .hero-inner,
-    .hero-clean-left,
-    .running-info,
-    .section{
-      min-width:0 !important;
-      max-width:100% !important;
-    }
-
-    .top-nav{
-      width:100% !important;
-      overflow:hidden !important;
-    }
-
-    .nav-inner{
-      width:100% !important;
-      padding:9px 10px !important;
-      gap:8px !important;
-      align-items:center !important;
-      justify-content:center !important;
-      flex-direction:column !important;
-    }
-
-    .brand{
-      width:100% !important;
-      justify-content:center !important;
-    }
-
-    .brand-logo{
-      height:38px !important;
-      max-width:230px !important;
-      width:auto !important;
-      object-fit:contain !important;
-    }
-
-    .nav-menu{
-      width:100% !important;
-      justify-content:center !important;
-      gap:6px !important;
-    }
-
-    .nav-menu a{
-      padding:7px 9px !important;
-      font-size:11px !important;
-      border:1px solid rgba(0,255,136,.22) !important;
-      background:rgba(0,0,0,.20) !important;
-    }
-
-    .hero{
-      width:100% !important;
-      min-width:0 !important;
-      height:auto !important;
-      min-height:0 !important;
-      aspect-ratio:1040 / 601 !important;
-      display:block !important;
-      overflow:hidden !important;
-      background-size:100% 100% !important;
-      background-position:center top !important;
-      background-repeat:no-repeat !important;
-      background-color:#02140b !important;
-      border-bottom:1px solid rgba(0,255,136,.30) !important;
-      box-shadow:inset 0 -22px 34px rgba(0,0,0,.18) !important;
-    }
-
-    .hero::before,
-    .hero::after{
-      display:none !important;
-      content:none !important;
-    }
-
-    .hero-inner{
-      width:100% !important;
-      height:100% !important;
-      min-height:0 !important;
-      padding:0 !important;
-      margin:0 !important;
-      display:block !important;
-    }
-
-    .hero-clean-left{
-      display:block !important;
-      width:100% !important;
-      height:100% !important;
-      min-height:0 !important;
-      padding:0 !important;
-      margin:0 !important;
-      background:transparent !important;
-    }
-
-    .running-info{
-      width:calc(100% - 20px) !important;
-      margin:10px auto 22px !important;
-      padding:10px !important;
-      display:grid !important;
-      grid-template-columns:repeat(2, minmax(0,1fr)) !important;
-      gap:8px !important;
-      border-radius:14px !important;
-      background:linear-gradient(135deg,rgba(2,20,11,.94),rgba(8,47,25,.88)) !important;
-      border:1px solid rgba(0,255,136,.28) !important;
-      box-shadow:0 10px 28px rgba(0,0,0,.28), 0 0 20px rgba(0,255,136,.08) !important;
-    }
-
-    .running-info div{
-      min-width:0 !important;
-      padding:8px 6px !important;
-      gap:7px !important;
-      align-items:center !important;
-      border-radius:12px !important;
-      border:1px solid rgba(255,255,255,.10) !important;
-      border-right:1px solid rgba(255,255,255,.10) !important;
-      background:rgba(0,0,0,.16) !important;
-    }
-
-    .info-icon{
-      font-size:20px !important;
-      min-width:24px !important;
-    }
-
-    .running-info strong{
-      font-size:10.5px !important;
-      line-height:1.15 !important;
-    }
-
-    .running-info span:not(.info-icon){
-      font-size:9.5px !important;
-      line-height:1.35 !important;
-    }
-
-    .section{
-      width:100% !important;
-      overflow:hidden !important;
-      padding-left:14px !important;
-      padding-right:14px !important;
-    }
-  }
-
-  @media (max-width:430px){
-    .brand-logo{height:34px !important;max-width:205px !important;}
-    .nav-menu a{font-size:10px !important;padding:6px 7px !important;}
-    .running-info{gap:7px !important;}
-  }
 </style>
 </head>
-
 <body>
-  <nav class="top-nav">
-    <div class="nav-inner">
-        <a href="#home" class="brand"><img class="brand-logo" src="https://logo.luvtoberi.com/resource/wadah4d.webp" alt="WADAH4D"></a>
-      <div class="nav-menu">
-        <a href="#home">Home</a>
-        <a href="#jadwal">Jadwal</a>
-        <a href="#hasil">Hasil</a>
-        <a href="#prediksi">Prediksi</a>
-        <a href="#grup">Grup</a>
-        <a href="#kalkulator">Kalkulator Parlay</a>
-        <a href="#kontak">Daftar</a>
+
+<!-- TOMBOL TONTON SEKARANG -->
+<div class="tonton-bar">
+  <a href="https://tontonsekarang.vercel.app/" class="tonton-btn">▶ TONTON SEKARANG!!</a>
+</div>
+
+<!-- HEADER WIKIPEDIA -->
+<div class="wiki-top">
+  <a class="wiki-logo" href="#">
+    <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="25" cy="25" r="24" fill="none" stroke="#a2a9b1" stroke-width="1"/>
+      <text x="25" y="33" text-anchor="middle" font-size="24" font-family="Linux Libertine,Georgia,serif" fill="#202122">W</text>
+    </svg>
+    <div class="wiki-logo-text">
+      <span class="wiki-logo-name">Wikipedia</span>
+      <span class="wiki-logo-tag">Ensiklopedia Bebas</span>
+    </div>
+  </a>
+  <div class="wiki-search">
+    <input type="text" placeholder="Telusuri Wikipedia" value="Drama">
+    <button>Cari</button>
+  </div>
+</div>
+<div class="wiki-nav">
+  <a href="#" class="active">Halaman</a>
+  <a href="#">Pembicaraan</a>
+  <a href="#">Baca</a>
+  <a href="#">Sunting</a>
+  <a href="#">Lihat riwayat</a>
+</div>
+
+<!-- MAIN LAYOUT -->
+<div class="main-layout">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="sidebar-box">
+      <div class="sidebar-title">Sastra</div>
+      <b style="font-size:11px">Sastra lisan</b>
+      <ul>
+        <li><a href="#">Folklor</a>
+          <ul>
+            <li><a href="#">Dongeng</a></li>
+            <li><a href="#">Legenda</a></li>
+            <li><a href="#">Mitos</a></li>
+            <li><a href="#">Peribahasa</a></li>
+            <li><a href="#">Wiracarita</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Pidato</a></li>
+      </ul>
+      <br>
+      <b style="font-size:11px">Genre tertulis utama</b>
+      <ul>
+        <li><a href="#" style="font-weight:bold">Drama</a>
+          <ul>
+            <li><a href="#">Pementasan</a></li>
+            <li><a href="#">Komedi</a></li>
+            <li><a href="#">Tragedi</a></li>
+            <li><a href="#">Tragikomedi</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Puisi</a>
+          <ul>
+            <li><a href="#">Epik</a></li>
+            <li><a href="#">Lirik</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Prosa</a>
+          <ul>
+            <li><a href="#">Cerita pendek</a></li>
+            <li><a href="#">Novel / Roman</a></li>
+            <li><a href="#">Novela</a></li>
+          </ul>
+        </li>
+      </ul>
+      <br>
+      <b style="font-size:11px">Fiksi</b>
+      <ul>
+        <li><a href="#">Bacaan anak</a></li>
+        <li><a href="#">Cerita cinta</a></li>
+        <li><a href="#">Fiksi sejarah</a></li>
+        <li><a href="#">Fantasi</a></li>
+        <li><a href="#">Fiksi ilmiah</a></li>
+        <li><a href="#">Satir</a></li>
+      </ul>
+      <br>
+      <b style="font-size:11px">Diskusi</b>
+      <ul>
+        <li><a href="#">Kritik</a></li>
+        <li><a href="#">Teori</a></li>
+        <li><a href="#">Sosiologi</a></li>
+        <li><a href="#">Majalah</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- KONTEN UTAMA -->
+  <div class="content">
+    <h1>Drama</h1>
+
+    <div class="infobox">
+      <div class="infobox-title">Sastra</div>
+      <div style="padding:8px;font-size:11px">
+        <b>Genre tertulis utama</b><br>
+        <a href="#">Drama</a> · <a href="#">Puisi</a> · <a href="#">Prosa</a><br><br>
+        <b>Jenis Drama</b><br>
+        <a href="#">Tragedi</a> · <a href="#">Komedi</a> · <a href="#">Melodrama</a><br><br>
+        <b>Struktur</b><br>
+        <a href="#">Babak</a> · <a href="#">Adegan</a> · <a href="#">Dialog</a><br><br>
+        <b>Diskusi</b><br>
+        <a href="#">Kritik</a> · <a href="#">Teori</a> · <a href="#">Sosiologi</a>
       </div>
     </div>
-  </nav>
 
-  <main id="home">
-    <section class="hero">
-      <div class="hero-inner">
-        <div class="hero-clean-left" aria-hidden="true"></div>
-      </div>
-    </section>
+    <p><b>Drama</b> adalah genre (jenis) karya <a href="#">sastra</a> yang menggambarkan kehidupan manusia dengan <a href="#">gerak</a>.<sup>[1][2][3]</sup> Drama menggambarkan realitas kehidupan, watak, serta tingkah laku manusia melalui peran dan <a href="#">dialog</a> yang dipentaskan.<sup>[1]</sup> Kisah dan cerita dalam drama memuat konflik dan emosi yang secara khusus ditujukan untuk pementasan <a href="#">teater</a>.<sup>[1]</sup> Naskah drama dibuat sedemikian rupa sehingga nantinya dapat dipentaskan untuk dapat dinikmati oleh penonton.<sup>[4]</sup> Drama memerlukan kualitas komunikasi, situasi dan aksi.<sup>[5]</sup> Kualitas tersebut dapat dilihat dari bagaimana sebuah <a href="#">konflik</a> atau masalah dapat disajikan secara utuh dan dalam pada sebuah pementasan drama.<sup>[5]</sup></p>
 
+    <div class="thumb">
+      <svg viewBox="0 0 220 146" xmlns="http://www.w3.org/2000/svg" width="220" height="146">
+        <rect width="220" height="146" fill="#1a1a2e"/>
+        <ellipse cx="110" cy="85" rx="85" ry="52" fill="#16213e"/>
+        <rect x="35" y="62" width="150" height="5" rx="2.5" fill="#e94560" opacity="0.6"/>
+        <circle cx="78" cy="78" r="22" fill="#0f3460" stroke="#e94560" stroke-width="1.5"/>
+        <circle cx="142" cy="78" r="22" fill="#0f3460" stroke="#e94560" stroke-width="1.5"/>
+        <rect x="90" y="105" width="40" height="20" rx="2" fill="#0f3460"/>
+        <rect x="95" y="100" width="30" height="3" rx="1.5" fill="#e94560" opacity="0.5"/>
+      </svg>
+      <div class="thumb-caption">Drama, cerita dalam bentuk gerak</div>
+    </div>
 
-    <!-- JADWAL -->
-    <section class="section" id="jadwal">
-      <div class="section-inner two-column">
-        <div class="section-copy">
-          <h2>Jadwal Pertandingan</h2>
-          <p>Pilih grup untuk melihat jadwal. Semua waktu WIB (UTC+7).</p>
-          <div class="filter-row" id="schedule-filters"></div>
-        </div>
-        <div class="match-list" id="match-list"></div>
-      </div>
-    </section>
+    <div class="toc">
+      <div class="toc-title">Daftar isi</div>
+      <ol>
+        <li><a href="#pengertian">Pengertian</a></li>
+        <li><a href="#struktur">Struktur</a></li>
+        <li><a href="#unsur">Unsur-unsur</a></li>
+        <li><a href="#jenis">Jenis</a>
+          <ol>
+            <li><a href="#tragedi">Drama tragedi</a></li>
+            <li><a href="#komedi">Drama komedi</a></li>
+            <li><a href="#melodrama">Melodrama</a></li>
+          </ol>
+        </li>
+        <li><a href="#rujukan">Rujukan</a></li>
+      </ol>
+    </div>
 
-    <!-- HASIL -->
-    <section class="section" id="hasil">
-      <div class="section-inner">
-        <div class="section-heading">
-          <h2>Hasil Pertandingan</h2>
-          <p>Semua pertandingan fase grup FIFA 2026 ditampilkan. Skor otomatis muncul setelah laga selesai jika data tersedia.</p>
-          <p id="live-update-status" class="auto-status">Status: menyiapkan update otomatis...</p>
-        </div>
-        <div class="pred-filter-row" id="hasil-filters"></div>
-        <div class="hasil-grid" id="result-list"></div>
-      </div>
-    </section>
+    <h2 id="pengertian">Pengertian</h2>
+    <p>Istilah untuk drama pada masa penjajahan Belanda di Indonesia disebut dengan istilah <i>tonil</i>.<sup>[5]</sup> Tonil kemudian berkembang diganti dengan istilah sandiwara oleh <a href="#">P.K.G Mangkunegara VII</a>.<sup>[5]</sup> Sandiwara berasal dari kata dalam bahasa Jawa <i>sandi</i> dan <i>wara</i>.<sup>[5]</sup> Sandi artinya <a href="#">rahasia</a>, sedangkan wara (warah) artinya pengajaran.<sup>[5]</sup> Maka istilah sandiwara mengandung makna pengajaran yang dilakukan dengan perlambang.<sup>[5]</sup></p>
+    <p>Sementara itu, pengertian drama modern dan tradisional harus dibedakan. Dalam drama modern, aktivitas drama menggunakan naskah dialog, sedangkan drama tradisional menggunakan improvisasi dalam dialognya.<sup>[6]</sup></p>
 
-    <!-- PREDIKSI -->
-    <section class="section" id="prediksi">
-      <div class="section-inner">
-        <div class="section-heading">
-          <h2>Prediksi Bola Terupdate</h2>
-          <p>Simulasi kekuatan tim, head-to-head, dan momentum untuk setiap laga.</p>
-        </div>
-        <div class="pred-filter-row" id="pred-filters"></div>
-        <div class="pred-grid" id="prediction-list"></div>
-      </div>
-    </section>
+    <h2 id="struktur">Struktur</h2>
+    <p>Drama merupakan sebuah karya yang memuat nilai artistik yang tinggi.<sup>[4]</sup> Sebuah drama mengikuti struktur <a href="#">alur</a> yang tertata.<sup>[4]</sup> Struktur yang tertata akan membantu penonton menikmati sebuah drama yang dipentaskan. Struktur drama memuat babak, adegan, dialog, prolog dan epilog.<sup>[4]</sup> Babak merupakan istilah lain dari episode.<sup>[4]</sup> Setiap babak memuat satu keutuhan kisah kecil yang menjadi keseluruhan drama.<sup>[4]</sup> Dengan kata lain, babak merupakan bagian dari naskah drama yang merangkum sebuah peristiwa yang terjadi di suatu tempat dengan urutan waktu tertentu.<sup>[4]</sup></p>
+    <p>Adegan merupakan bagian dari drama yang menunjukkan perubahan peristiwa.<sup>[4]</sup> Perubahan peristiwa ini ditandai dengan pergantian tokoh atau setting tempat dan waktu.<sup>[4]</sup> Misalnya, dalam adegan pertama terdapat tokoh A sedang berbicara dengan tokoh B. Kemudian mereka berjalan ke tempat lain lalu bertemu dengan tokoh C, maka terdapat perubahan adegan di dalamnya.<sup>[4]</sup></p>
+    <p>Dialog merupakan bagian dari naskah drama yang berupa percakapan antara satu tokoh dengan tokoh yang lain.<sup>[4]</sup> Dialog adalah bagian yang paling dominan dalam drama.<sup>[4]</sup> Selain itu, dialog adalah hal yang membedakan antara drama dengan jenis karya sastra yang lain.<sup>[4]</sup></p>
+    <p>Prolog dan epilog merupakan bingkai dari sebuah drama.<sup>[4]</sup> Prolog merupakan pengantar untuk masuk ke dalam sebuah drama.<sup>[4]</sup> Isinya adalah gambaran umum mengenai drama yang akan dimainkan.<sup>[4]</sup> Sementara epilog adalah bagian terakhir dari pementasan drama.<sup>[4]</sup> Isinya merupakan kesimpulan dari drama yang dimainkan. Epilog biasanya memuat makna dan pesan dari drama yang dimainkan.<sup>[4]</sup></p>
 
-    <!-- KLASEMEN -->
-    <section class="section" id="grup">
-      <div class="section-inner">
-        <div class="section-heading">
-          <h2>Klasemen Grup</h2>
-          <p>Dihitung otomatis dari hasil pertandingan resmi. Mulai dari 0 poin.</p>
-        </div>
-        <div class="standings-note">Semua tim mulai dari 0 poin &mdash; poin bertambah setelah laga selesai.</div>
-        <div class="group-tabs" id="group-tabs"></div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Pos</th><th>Tim</th><th>M</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Poin</th>
-              </tr>
-            </thead>
-            <tbody id="group-table"></tbody>
-          </table>
-        </div>
-      </div>
-    </section>
+    <h2 id="unsur">Unsur-unsur</h2>
+    <p>Ada tiga unsur penting dalam drama, diantaranya:</p>
+    <ul>
+      <li><b>Tokoh</b>, pelaku yang mempunyai peran yang lebih dibandingkan pelaku-pelaku lain, biasanya dikategorikan dalam sifat protagonis atau antagonis.</li>
+      <li><b>Wawacang</b>, dialog atau percakapan yang harus diucapkan oleh tokoh cerita.<sup>[7]</sup></li>
+      <li><b>Kramagung</b>, petunjuk perilaku, tindakan, atau perbuatan yang harus dilakukan oleh tokoh. Dalam naskah drama, kramagung dituliskan dalam tanda kurung (biasanya dicetak miring).<sup>[8]</sup></li>
+    </ul>
 
-    <!-- KALKULATOR -->
-    <section class="section" id="kalkulator">
-      <div class="section-inner">
-        <div class="section-heading">
-          <h2>Kalkulator Parlay</h2>
-          <p>Masukkan modal dan odds pilihan, sistem akan hitung total odds serta estimasi hasil.</p>
-        </div>
-        <div class="calculator-grid">
-          <div class="calc-card">
-            <div class="calc-row">
-              <label>Modal taruhan</label>
-              <input type="number" id="stake" value="100000" min="0">
-            </div>
-            <div class="odds-list" id="odds-list"></div>
-            <button class="btn btn-gold" type="button" onclick="addLeg()">+ Tambah Partai</button>
-          </div>
-          <div class="calc-card">
-            <div class="calc-result">
-              <span>Total Odds</span>
-              <strong id="total-odds">0.00</strong>
-              <span>Estimasi Menang</span>
-              <strong id="potential-win">Rp 0</strong>
-              <span>Estimasi Profit</span>
-              <strong id="potential-profit">Rp 0</strong>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <h2 id="jenis">Jenis</h2>
 
-    <!-- LINK DAFTAR -->
-    <section class="section" id="kontak">
-      <div class="section-inner">
-        <div class="section-heading">
-          <h2>Link Resmi WADAH4D</h2>
-          <p>Pilih salah satu link di bawah ini untuk daftar atau klaim bonus.</p>
-        </div>
-        <div class="link-grid">
-          <a class="link-card" href="https://wadahwow.com/" target="_blank"><span>LINK</span><h3>LOGIN DISINI</h3><p>Klik untuk login.</p></a>
-          <a class="link-card" href="https://wadahwow.com/" target="_blank"><span>LINK</span><h3>REGISTER DISINI</h3><p>Klik untuk daftar.</p></a>
-          <a class="link-card" href="https://wadahwow.com/" target="_blank"><span>BONUS</span><h3>LINK CLAIM BONUS</h3><p>Klik untuk klaim bonus.</p></a>
-        </div>
-      </div>
-    </section>
-  </main>
+    <h3 id="tragedi">Drama tragedi</h3>
+    <p>Drama <a href="#">tragedi</a> adalah drama yang menceritakan kisah-kisah sedih dari para tokoh mulia. Kisah di dalam drama tragedi adalah perjuangan tokoh mulia yang menjadi pahlawan untuk menentang berbagai perlawanan terhadap dirinya. Penentangan ini bersifat tidak adil karena adanya perbedaan kekuatan. Cerita di dalam drama tragedi sangat serius sehingga menimbulkan rasa kasihan dan rasa takut.<sup>[9]</sup></p>
 
-  <footer class="footer">
-    <p>&copy; 2026 WADAH4D. Jadwal &amp; hasil terupdate otomatis sesuai FIFA 2026.</p>
-  </footer>
+    <h3 id="komedi">Drama komedi</h3>
+    <p>Drama <a href="#">komedi</a> adalah drama yang menampilkan cerita-cerita yang tidak terlalu serius tetapi lucu. Cerita berkaitan dengan peristiwa-peristiwa yang kemungkinan terjadi di dalam drama. Hal-hal lucu timbul dari kelakuan para tokoh dan tidak berkaitan dengan situasi cerita. Kelakuan yang lucu juga mengandung kebijaksanaan para tokoh.<sup>[9]</sup></p>
 
-  <script>
-    /* ============================================================
-       WADAH4D — FIFA WORLD CUP 2026
-       48 Tim | 12 Grup | 72 Pertandingan Fase Grup
-       Jadwal fase grup disesuaikan dengan daftar FIFA terbaru. Waktu WIB (UTC+7).
-    ============================================================ */
+    <h3 id="melodrama">Melodrama</h3>
+    <p><a href="#">Melodrama</a> memiliki kisah yang sangat serius. Dalam penceritaannya, muncul berbagai kejadian secara kebetulan. Cerita di dalam melodrama memunculkan rasa kasihan yang membuat penontonnya terbawa suasana.<sup>[9]</sup> Unsur-unsur seperti cinta yang terhalang, pengkhianatan, dan ketidakadilan sosial sering menjadi pusat cerita dalam melodrama.<sup>[10]</sup></p>
 
-    const WORLD_CUP_FIXTURES = [
-      {group:"A",iso:"2026-06-12T02:00:00+07:00",home:"MEXICO",away:"AFRIKA SELATAN",venue:"Estadio Azteca, Mexico City",round:"Fase Grup"},
-      {group:"A",iso:"2026-06-12T09:00:00+07:00",home:"KOREA SELATAN",away:"CZECHIA",venue:"Estadio Akron, Zapopan",round:"Fase Grup"},
-      {group:"A",iso:"2026-06-18T23:00:00+07:00",home:"CZECHIA",away:"AFRIKA SELATAN",venue:"Mercedes-Benz Stadium, Atlanta",round:"Fase Grup"},
-      {group:"A",iso:"2026-06-19T08:00:00+07:00",home:"MEXICO",away:"KOREA SELATAN",venue:"Estadio Akron, Zapopan",round:"Fase Grup"},
-      {group:"A",iso:"2026-06-25T08:00:00+07:00",home:"CZECHIA",away:"MEXICO",venue:"Estadio Azteca, Mexico City",round:"Fase Grup"},
-      {group:"A",iso:"2026-06-25T08:00:00+07:00",home:"AFRIKA SELATAN",away:"KOREA SELATAN",venue:"Estadio BBVA, Guadalupe",round:"Fase Grup"},
-      {group:"B",iso:"2026-06-13T02:00:00+07:00",home:"KANADA",away:"BOSNIA & HERZEGOVINA",venue:"BMO Field, Toronto",round:"Fase Grup"},
-      {group:"B",iso:"2026-06-14T02:00:00+07:00",home:"QATAR",away:"SWISS",venue:"Levi's Stadium, Santa Clara",round:"Fase Grup"},
-      {group:"B",iso:"2026-06-19T02:00:00+07:00",home:"SWISS",away:"BOSNIA & HERZEGOVINA",venue:"SoFi Stadium, Inglewood",round:"Fase Grup"},
-      {group:"B",iso:"2026-06-19T05:00:00+07:00",home:"KANADA",away:"QATAR",venue:"BC Place, Vancouver",round:"Fase Grup"},
-      {group:"B",iso:"2026-06-25T02:00:00+07:00",home:"SWISS",away:"KANADA",venue:"BC Place, Vancouver",round:"Fase Grup"},
-      {group:"B",iso:"2026-06-25T02:00:00+07:00",home:"BOSNIA & HERZEGOVINA",away:"QATAR",venue:"Lumen Field, Seattle",round:"Fase Grup"},
-      {group:"C",iso:"2026-06-14T05:00:00+07:00",home:"BRAZIL",away:"MAROKO",venue:"MetLife Stadium, East Rutherford",round:"Fase Grup"},
-      {group:"C",iso:"2026-06-14T08:00:00+07:00",home:"HAITI",away:"SKOTLANDIA",venue:"Gillette Stadium, Foxborough",round:"Fase Grup"},
-      {group:"C",iso:"2026-06-20T05:00:00+07:00",home:"SKOTLANDIA",away:"MAROKO",venue:"Gillette Stadium, Foxborough",round:"Fase Grup"},
-      {group:"C",iso:"2026-06-20T07:30:00+07:00",home:"BRAZIL",away:"HAITI",venue:"Lincoln Financial Field, Philadelphia",round:"Fase Grup"},
-      {group:"C",iso:"2026-06-25T05:00:00+07:00",home:"SKOTLANDIA",away:"BRAZIL",venue:"Hard Rock Stadium, Miami Gardens",round:"Fase Grup"},
-      {group:"C",iso:"2026-06-25T05:00:00+07:00",home:"MAROKO",away:"HAITI",venue:"Mercedes-Benz Stadium, Atlanta",round:"Fase Grup"},
-      {group:"D",iso:"2026-06-13T08:00:00+07:00",home:"AMERIKA SERIKAT",away:"PARAGUAY",venue:"SoFi Stadium, Inglewood",round:"Fase Grup"},
-      {group:"D",iso:"2026-06-14T11:00:00+07:00",home:"AUSTRALIA",away:"TURKI",venue:"BC Place, Vancouver",round:"Fase Grup"},
-      {group:"D",iso:"2026-06-20T02:00:00+07:00",home:"AMERIKA SERIKAT",away:"AUSTRALIA",venue:"Lumen Field, Seattle",round:"Fase Grup"},
-      {group:"D",iso:"2026-06-20T10:00:00+07:00",home:"TURKI",away:"PARAGUAY",venue:"Levi's Stadium, Santa Clara",round:"Fase Grup"},
-      {group:"D",iso:"2026-06-26T09:00:00+07:00",home:"TURKI",away:"AMERIKA SERIKAT",venue:"SoFi Stadium, Inglewood",round:"Fase Grup"},
-      {group:"D",iso:"2026-06-26T09:00:00+07:00",home:"PARAGUAY",away:"AUSTRALIA",venue:"Levi's Stadium, Santa Clara",round:"Fase Grup"},
-      {group:"E",iso:"2026-06-15T00:00:00+07:00",home:"JERMAN",away:"CURAÇAO",venue:"NRG Stadium, Houston",round:"Fase Grup"},
-      {group:"E",iso:"2026-06-15T06:00:00+07:00",home:"PANTAI GADING",away:"EKUADOR",venue:"Lincoln Financial Field, Philadelphia",round:"Fase Grup"},
-      {group:"E",iso:"2026-06-21T03:00:00+07:00",home:"JERMAN",away:"PANTAI GADING",venue:"BMO Field, Toronto",round:"Fase Grup"},
-      {group:"E",iso:"2026-06-21T07:00:00+07:00",home:"EKUADOR",away:"CURAÇAO",venue:"Arrowhead Stadium, Kansas City",round:"Fase Grup"},
-      {group:"E",iso:"2026-06-26T03:00:00+07:00",home:"CURAÇAO",away:"PANTAI GADING",venue:"Lincoln Financial Field, Philadelphia",round:"Fase Grup"},
-      {group:"E",iso:"2026-06-26T03:00:00+07:00",home:"EKUADOR",away:"JERMAN",venue:"MetLife Stadium, East Rutherford",round:"Fase Grup"},
-      {group:"F",iso:"2026-06-15T03:00:00+07:00",home:"BELANDA",away:"JEPANG",venue:"AT&T Stadium, Arlington",round:"Fase Grup"},
-      {group:"F",iso:"2026-06-15T09:00:00+07:00",home:"SWEDIA",away:"TUNISIA",venue:"Estadio BBVA, Guadalupe",round:"Fase Grup"},
-      {group:"F",iso:"2026-06-21T00:00:00+07:00",home:"BELANDA",away:"SWEDIA",venue:"NRG Stadium, Houston",round:"Fase Grup"},
-      {group:"F",iso:"2026-06-21T11:00:00+07:00",home:"TUNISIA",away:"JEPANG",venue:"Estadio BBVA, Guadalupe",round:"Fase Grup"},
-      {group:"F",iso:"2026-06-26T06:00:00+07:00",home:"JEPANG",away:"SWEDIA",venue:"AT&T Stadium, Arlington",round:"Fase Grup"},
-      {group:"F",iso:"2026-06-26T06:00:00+07:00",home:"TUNISIA",away:"BELANDA",venue:"Arrowhead Stadium, Kansas City",round:"Fase Grup"},
-      {group:"G",iso:"2026-06-16T02:00:00+07:00",home:"BELGIA",away:"MESIR",venue:"Lumen Field, Seattle",round:"Fase Grup"},
-      {group:"G",iso:"2026-06-16T08:00:00+07:00",home:"IRAN",away:"SELANDIA BARU",venue:"SoFi Stadium, Inglewood",round:"Fase Grup"},
-      {group:"G",iso:"2026-06-22T02:00:00+07:00",home:"BELGIA",away:"IRAN",venue:"SoFi Stadium, Inglewood",round:"Fase Grup"},
-      {group:"G",iso:"2026-06-22T08:00:00+07:00",home:"SELANDIA BARU",away:"MESIR",venue:"BC Place, Vancouver",round:"Fase Grup"},
-      {group:"G",iso:"2026-06-27T10:00:00+07:00",home:"MESIR",away:"IRAN",venue:"Lumen Field, Seattle",round:"Fase Grup"},
-      {group:"G",iso:"2026-06-27T10:00:00+07:00",home:"SELANDIA BARU",away:"BELGIA",venue:"BC Place, Vancouver",round:"Fase Grup"},
-      {group:"H",iso:"2026-06-15T23:00:00+07:00",home:"SPANYOL",away:"CAPE VERDE",venue:"Mercedes-Benz Stadium, Atlanta",round:"Fase Grup"},
-      {group:"H",iso:"2026-06-16T05:00:00+07:00",home:"ARAB SAUDI",away:"URUGUAY",venue:"Hard Rock Stadium, Miami Gardens",round:"Fase Grup"},
-      {group:"H",iso:"2026-06-21T23:00:00+07:00",home:"SPANYOL",away:"ARAB SAUDI",venue:"Mercedes-Benz Stadium, Atlanta",round:"Fase Grup"},
-      {group:"H",iso:"2026-06-22T05:00:00+07:00",home:"URUGUAY",away:"CAPE VERDE",venue:"Hard Rock Stadium, Miami Gardens",round:"Fase Grup"},
-      {group:"H",iso:"2026-06-27T07:00:00+07:00",home:"CAPE VERDE",away:"ARAB SAUDI",venue:"NRG Stadium, Houston",round:"Fase Grup"},
-      {group:"H",iso:"2026-06-27T07:00:00+07:00",home:"URUGUAY",away:"SPANYOL",venue:"Estadio Akron, Zapopan",round:"Fase Grup"},
-      {group:"I",iso:"2026-06-17T02:00:00+07:00",home:"PRANCIS",away:"SENEGAL",venue:"MetLife Stadium, East Rutherford",round:"Fase Grup"},
-      {group:"I",iso:"2026-06-17T05:00:00+07:00",home:"IRAK",away:"NORWEGIA",venue:"Gillette Stadium, Foxborough",round:"Fase Grup"},
-      {group:"I",iso:"2026-06-23T04:00:00+07:00",home:"PRANCIS",away:"IRAK",venue:"Lincoln Financial Field, Philadelphia",round:"Fase Grup"},
-      {group:"I",iso:"2026-06-23T07:00:00+07:00",home:"NORWEGIA",away:"SENEGAL",venue:"MetLife Stadium, East Rutherford",round:"Fase Grup"},
-      {group:"I",iso:"2026-06-27T02:00:00+07:00",home:"NORWEGIA",away:"PRANCIS",venue:"Gillette Stadium, Foxborough",round:"Fase Grup"},
-      {group:"I",iso:"2026-06-27T02:00:00+07:00",home:"SENEGAL",away:"IRAK",venue:"BMO Field, Toronto",round:"Fase Grup"},
-      {group:"J",iso:"2026-06-17T08:00:00+07:00",home:"ARGENTINA",away:"ALJAZAIR",venue:"Arrowhead Stadium, Kansas City",round:"Fase Grup"},
-      {group:"J",iso:"2026-06-17T11:00:00+07:00",home:"AUSTRIA",away:"JORDAN",venue:"Levi's Stadium, Santa Clara",round:"Fase Grup"},
-      {group:"J",iso:"2026-06-23T00:00:00+07:00",home:"ARGENTINA",away:"AUSTRIA",venue:"AT&T Stadium, Arlington",round:"Fase Grup"},
-      {group:"J",iso:"2026-06-23T10:00:00+07:00",home:"JORDAN",away:"ALJAZAIR",venue:"Levi's Stadium, Santa Clara",round:"Fase Grup"},
-      {group:"J",iso:"2026-06-28T09:00:00+07:00",home:"ALJAZAIR",away:"AUSTRIA",venue:"Arrowhead Stadium, Kansas City",round:"Fase Grup"},
-      {group:"J",iso:"2026-06-28T09:00:00+07:00",home:"JORDAN",away:"ARGENTINA",venue:"AT&T Stadium, Arlington",round:"Fase Grup"},
-      {group:"K",iso:"2026-06-18T00:00:00+07:00",home:"PORTUGAL",away:"RD KONGO",venue:"NRG Stadium, Houston",round:"Fase Grup"},
-      {group:"K",iso:"2026-06-18T09:00:00+07:00",home:"UZBEKISTAN",away:"KOLOMBIA",venue:"Estadio Azteca, Mexico City",round:"Fase Grup"},
-      {group:"K",iso:"2026-06-24T00:00:00+07:00",home:"PORTUGAL",away:"UZBEKISTAN",venue:"NRG Stadium, Houston",round:"Fase Grup"},
-      {group:"K",iso:"2026-06-24T09:00:00+07:00",home:"KOLOMBIA",away:"RD KONGO",venue:"Estadio Akron, Zapopan",round:"Fase Grup"},
-      {group:"K",iso:"2026-06-28T06:30:00+07:00",home:"KOLOMBIA",away:"PORTUGAL",venue:"Hard Rock Stadium, Miami Gardens",round:"Fase Grup"},
-      {group:"K",iso:"2026-06-28T06:30:00+07:00",home:"RD KONGO",away:"UZBEKISTAN",venue:"Mercedes-Benz Stadium, Atlanta",round:"Fase Grup"},
-      {group:"L",iso:"2026-06-18T03:00:00+07:00",home:"INGGRIS",away:"KROASIA",venue:"AT&T Stadium, Arlington",round:"Fase Grup"},
-      {group:"L",iso:"2026-06-18T06:00:00+07:00",home:"GHANA",away:"PANAMA",venue:"BMO Field, Toronto",round:"Fase Grup"},
-      {group:"L",iso:"2026-06-24T03:00:00+07:00",home:"INGGRIS",away:"GHANA",venue:"Gillette Stadium, Foxborough",round:"Fase Grup"},
-      {group:"L",iso:"2026-06-24T06:00:00+07:00",home:"PANAMA",away:"KROASIA",venue:"BMO Field, Toronto",round:"Fase Grup"},
-      {group:"L",iso:"2026-06-28T04:00:00+07:00",home:"PANAMA",away:"INGGRIS",venue:"MetLife Stadium, East Rutherford",round:"Fase Grup"},
-      {group:"L",iso:"2026-06-28T04:00:00+07:00",home:"KROASIA",away:"GHANA",venue:"Lincoln Financial Field, Philadelphia",round:"Fase Grup"}
-    ];
+    <h2 id="rujukan">Rujukan</h2>
+    <ol style="font-size:13px;font-family:Arial,sans-serif">
+      <li>Depdiknas (2008). <i>Kamus Besar Bahasa Indonesia</i>. Jakarta: Gramedia. hlm. 342-343. ISBN 978-979-22-3841-9.</li>
+      <li>Rene Wellek dan Austin Warren (2013). <i>Teori Kesusastraan</i>. Jakarta: Gramedia Pustaka Utama.</li>
+      <li>Tetti Melawati (2011). "Peningkatan Kemampuan Memahami Drama dan Menulis Teks Drama melalui Model Pembelajaran SAVI". UPI.</li>
+      <li>Suwardi Endraswara (2011). <i>Metode Pembelajaran Drama</i>. Yogyakarta: CAPS. hlm. 11-31.</li>
+      <li>Harymawan (1988). <i>Dramaturgi</i>. Bandung: Rosda.</li>
+      <li><a href="#">"Mencari Kedudukan Drama Modern di Indonesia"</a>. www.sastra.xyz. 2018-07-28.</li>
+      <li><a href="#">"Berita Drama Korea Terkini dan Terbaru Hari Ini - SINDOnews"</a>. www.sindonews.com. 2023-02-15.</li>
+      <li>Suherli, dkk. (2017). <i>Bahasa Indonesia Kelas XI</i>. Jakarta: Kementerian Pendidikan dan Kebudayaan.</li>
+      <li>Kosasih, E. (2008). <i>Apresiasi Sastra Indonesia</i>. Jakarta: Nobel Edumedia. hlm. 86.</li>
+      <li>Putra, Windah (2024-08-03). <a href="#">"Persiapan pementasan drama"</a>. kulitsehatnutrafor.com.</li>
+    </ol>
+  </div>
+</div>
 
-    /* Hasil — mulai kosong, diisi dari ESPN API */
-    let RESULTS = [];
+<!-- FOOTER -->
+<div class="wiki-footer">
+  <ul>
+    <li><a href="#">Kebijakan privasi</a></li>
+    <li><a href="#">Tentang Wikipedia</a></li>
+    <li><a href="#">Penyangkalan</a></li>
+    <li><a href="#">Kode Etik</a></li>
+    <li><a href="#">Pengembang</a></li>
+    <li><a href="#">Statistik</a></li>
+    <li><a href="#">Pernyataan kuki</a></li>
+  </ul>
+  <p>Halaman ini terakhir diubah pada 6 Februari 2026, pukul 11.30. &nbsp;·&nbsp; Teks tersedia di bawah <a href="#">Lisensi Atribusi-BerbagiSerupa Creative Commons</a>.</p>
+</div>
 
-    const TEAM_POWER = {
-      "ARGENTINA":93,"PRANCIS":91,"BRAZIL":90,"INGGRIS":89,"SPANYOL":88,
-      "PORTUGAL":87,"BELANDA":86,"JERMAN":85,"BELGIA":84,"ITALIA":83,
-      "URUGUAY":82,"KROASIA":81,"MAROKO":79,"SENEGAL":77,"KOLOMBIA":77,
-      "MEXICO":76,"JEPANG":76,"KOREA SELATAN":75,"KOREA REPUBLIC":75,
-      "AMERIKA SERIKAT":76,"KANADA":73,"AUSTRALIA":72,"POLANDIA":73,
-      "SKOTLANDIA":71,"SERBIA":74,"PARAGUAY":70,"EKUADOR":72,"CHILE":73,
-      "PERU":70,"VENEZUELA":68,"BOLIVIA":65,"JAMAICA":65,"PANAMA":67,
-      "EL SALVADOR":63,"KOSTA RIKA":67,"TUNISIA":71,"ARAB SAUDI":70,
-      "NIGERIA":73,"GHANA":71,"PANTAI GADING":73,"MESIR":72,"KAMERUN":72,
-      "ALJAZAIR":73,"HONDURAS":64,"IRAN":72,"IRAK":67,"UZBEKISTAN":66,
-      "SELANDIA BARU":64,"AFRIKA SELATAN":69
-      ,"CZECHIA":73,"QATAR":70,"SWISS":78,"BOSNIA & HERZEGOVINA":72,"HAITI":63,"TURKI":76,"CURAÇAO":64,"SWEDIA":78,"CAPE VERDE":66,"NORWEGIA":80,"AUSTRIA":77,"JORDAN":64,"RD KONGO":69
-    };
-
-    const TEAM_FLAGS = {
-      "ARGENTINA":"ar","PRANCIS":"fr","BRAZIL":"br","INGGRIS":"gb-eng",
-      "SPANYOL":"es","PORTUGAL":"pt","BELANDA":"nl","JERMAN":"de",
-      "BELGIA":"be","ITALIA":"it","URUGUAY":"uy","KROASIA":"hr",
-      "MAROKO":"ma","SENEGAL":"sn","KOLOMBIA":"co","MEXICO":"mx",
-      "JEPANG":"jp","KOREA SELATAN":"kr","KOREA REPUBLIC":"kr",
-      "AMERIKA SERIKAT":"us","KANADA":"ca","AUSTRALIA":"au",
-      "POLANDIA":"pl","SKOTLANDIA":"gb-sct","SERBIA":"rs",
-      "PARAGUAY":"py","EKUADOR":"ec","CHILE":"cl","PERU":"pe",
-      "VENEZUELA":"ve","BOLIVIA":"bo","JAMAICA":"jm","PANAMA":"pa",
-      "EL SALVADOR":"sv","KOSTA RIKA":"cr","TUNISIA":"tn","ARAB SAUDI":"sa",
-      "NIGERIA":"ng","GHANA":"gh","PANTAI GADING":"ci","MESIR":"eg",
-      "KAMERUN":"cm","ALJAZAIR":"dz","HONDURAS":"hn","IRAN":"ir",
-      "IRAK":"iq","UZBEKISTAN":"uz","SELANDIA BARU":"nz","AFRIKA SELATAN":"za"
-      ,"CZECHIA":"cz","QATAR":"qa","SWISS":"ch","BOSNIA & HERZEGOVINA":"ba","HAITI":"ht","TURKI":"tr","CURAÇAO":"cw","SWEDIA":"se","CAPE VERDE":"cv","NORWEGIA":"no","AUSTRIA":"at","JORDAN":"jo","RD KONGO":"cd",
-      "SOUTH AFRICA":"za","FRANCE":"fr","SPAIN":"es","GERMANY":"de",
-      "ITALY":"it","ENGLAND":"gb-eng","NETHERLANDS":"nl","BELGIUM":"be",
-      "CROATIA":"hr","MOROCCO":"ma","JAPAN":"jp","SOUTH KOREA":"kr",
-      "UNITED STATES":"us","USA":"us","CANADA":"ca",
-      "COLOMBIA":"co","IVORY COAST":"ci","CAMEROON":"cm","ALGERIA":"dz",
-      "EGYPT":"eg","IRAN":"ir","IRAQ":"iq","NEW ZEALAND":"nz",
-      "ECUADOR":"ec","VENEZUELA":"ve","BOLIVIA":"bo","PERU":"pe","CHILE":"cl",
-      "URUGUAY":"uy","PARAGUAY":"py","JAMAICA":"jm","PANAMA":"pa",
-      "EL SALVADOR":"sv","COSTA RICA":"cr","HONDURAS":"hn","SCOTLAND":"gb-sct",
-      "POLAND":"pl","SERBIA":"rs","SAUDI ARABIA":"sa","SENEGAL":"sn","GHANA":"gh","NIGERIA":"ng","TUNISIA":"tn"
-    };
-
-    const GROUPS = ["ALL","A","B","C","D","E","F","G","H","I","J","K","L"];
-    let CURRENT_GROUP_TABLE = "A";
-    let CURRENT_PRED_GROUP = "ALL";
-    let CURRENT_HASIL_GROUP = "ALL";
-
-    function esc(v){return String(v).replace(/[&<>'"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":" &#39;",'"':"&quot;"}[c]))}
-    function rupiah(n){return new Intl.NumberFormat("id-ID",{style:"currency",currency:"IDR",maximumFractionDigits:0}).format(n||0)}
-    function flagUrl(team){const code=TEAM_FLAGS[String(team).toUpperCase()];return code?`https://flagcdn.com/w160/${code}.png`:""}
-
-    function teamBlock(team){
-      const safe=esc(team),url=flagUrl(team);
-      const flag=url?`<img class="team-flag" src="${url}" alt="${safe}" loading="lazy">`:`<div class="team-flag" style="display:grid;place-items:center;color:#777;font-size:10px;">?</div>`;
-      return`<div class="team-box">${flag}<div class="team-name">${safe}</div></div>`;
-    }
-    function teamsLayout(h,a){return`<div class="match-teams">${teamBlock(h)}<div class="vs-center">VS</div>${teamBlock(a)}</div>`}
-    function toDate(m){return new Date(m.iso)}
-    function fmtFull(iso){return new Date(iso).toLocaleString("id-ID",{weekday:"long",day:"2-digit",month:"long",hour:"2-digit",minute:"2-digit",timeZone:"Asia/Jakarta"}).replace("pukul","")+" WIB"}
-    function fmtShort(iso){return new Date(iso).toLocaleString("id-ID",{day:"2-digit",month:"short",hour:"2-digit",minute:"2-digit",timeZone:"Asia/Jakarta"}).replace("pukul","")}
-
-    function getUpcoming(){
-      const now=new Date();
-      const sorted=[...WORLD_CUP_FIXTURES].sort((a,b)=>toDate(a)-toDate(b));
-      const up=sorted.filter(m=>toDate(m)>=now);
-      return up.length?up:sorted.slice(0,12);
-    }
-
-    function calcPred(m){
-      const hp=TEAM_POWER[m.home]||70,ap=TEAM_POWER[m.away]||70,diff=hp-ap;
-      let h=38+diff,a=38-diff,d=24-Math.min(Math.abs(diff),12)*.45;
-      h=Math.max(18,Math.min(72,h));a=Math.max(18,Math.min(72,a));
-      const tot=h+a+d;
-      h=Math.round(h/tot*100);a=Math.round(a/tot*100);d=100-h-a;
-      let winner="Imbang";
-      if(h>a&&h>d)winner=m.home;
-      if(a>h&&a>d)winner=m.away;
-      let sh=Math.max(0,Math.round((hp-62)/18)),sa=Math.max(0,Math.round((ap-62)/18));
-      if(winner===m.home&&sh<=sa)sh=sa+1;
-      if(winner===m.away&&sa<=sh)sa=sh+1;
-      if(winner==="Imbang")sh=sa;
-      return{winner,score:`${sh} - ${sa}`,pct:{h,d,a}};
-    }
-
-    /* ---- JADWAL FILTERS ---- */
-    function renderFilters(){
-      const el=document.getElementById("schedule-filters");
-      el.innerHTML=GROUPS.map(g=>`<button class="filter-btn ${g==="ALL"?"is-active":""}" data-grp="${g}">${g==="ALL"?"Semua":"Grup "+g}</button>`).join("");
-      el.querySelectorAll(".filter-btn").forEach(btn=>btn.addEventListener("click",()=>{
-        el.querySelectorAll(".filter-btn").forEach(b=>b.classList.remove("is-active"));
-        btn.classList.add("is-active");renderMatches(btn.dataset.grp);
-      }));
-    }
-
-    function renderMatches(group="ALL"){
-      const src=group==="ALL"?getUpcoming().slice(0,12):WORLD_CUP_FIXTURES.filter(m=>m.group===group);
-      if(!src.length){document.getElementById("match-list").innerHTML=`<p style="color:#aaa;padding:30px;text-align:center;">Belum ada jadwal.</p>`;return;}
-      document.getElementById("match-list").innerHTML=src.map(m=>{
-        const done=RESULTS.find(r=>norm(r.home)===norm(m.home)&&norm(r.away)===norm(m.away));
-        const badge=done
-          ?`<span style="background:#1a3a1a;border:1px solid #4caf50;color:#4caf50;border-radius:999px;padding:6px 10px;font-size:11px;font-weight:900;">✓ ${done.score}</span>`
-          :`<span class="group-badge">Grup ${m.group}</span>`;
-        return`<article class="match-item">
-          <time>${fmtFull(m.iso)}</time>
-          <div>${teamsLayout(m.home,m.away)}<p class="match-note">${m.round} · ${m.venue}</p></div>
-          ${badge}
-        </article>`;
-      }).join("");
-    }
-
-    /* ---- HASIL FILTERS ---- */
-    function renderHasilFilters(){
-      const el=document.getElementById("hasil-filters");
-      el.innerHTML=GROUPS.map(g=>`<button class="filter-btn ${g==="ALL"?"is-active":""}" data-hg="${g}">${g==="ALL"?"Semua":"Grup "+g}</button>`).join("");
-      el.querySelectorAll("[data-hg]").forEach(btn=>btn.addEventListener("click",()=>{
-        el.querySelectorAll("[data-hg]").forEach(b=>b.classList.remove("is-active"));
-        btn.classList.add("is-active");CURRENT_HASIL_GROUP=btn.dataset.hg;renderResults();
-      }));
-    }
-
-    /* ---- RENDER HASIL — tampilkan semua pertandingan, skor hanya yang sudah selesai ---- */
-    function renderResults(){
-      const now=new Date();
-      const src=(CURRENT_HASIL_GROUP==="ALL"
-        ?WORLD_CUP_FIXTURES
-        :WORLD_CUP_FIXTURES.filter(m=>m.group===CURRENT_HASIL_GROUP)
-      ).slice().sort((a,b)=>toDate(a)-toDate(b));
-
-      document.getElementById("result-list").innerHTML=src.map(m=>{
-        const done=RESULTS.find(r=>norm(r.home)===norm(m.home)&&norm(r.away)===norm(m.away));
-        const isPast=toDate(m)<now;
-        const hf=flagUrl(m.home),af=flagUrl(m.away);
-        const fi=(url,n)=>url?`<img class="hasil-team-flag" src="${url}" alt="${esc(n)}" loading="lazy">`:`<span style="font-size:24px;display:block;text-align:center">🏳</span>`;
-
-        let middleBox;
-        if(done){
-          middleBox=`<div class="hasil-score-box">${done.score}</div>`;
-        }else if(isPast){
-          middleBox=`<div class="hasil-upcoming-box">Menunggu<br>Skor Resmi</div>`;
-        }else{
-          middleBox=`<div class="hasil-upcoming-box">${fmtShort(m.iso)}<br>WIB</div>`;
-        }
-
-        return`<article class="hasil-card">
-          <div class="hasil-top">
-            <span class="hasil-group">Grup ${m.group} &bull; ${m.round}</span>
-            <span class="hasil-date">${done?"✓ Selesai":isPast?"⏳ Menunggu":"🗓 Akan Datang"}</span>
-          </div>
-          <div class="hasil-teams-row">
-            <div class="hasil-team">${fi(hf,m.home)}<div class="hasil-team-name">${esc(m.home)}</div></div>
-            ${middleBox}
-            <div class="hasil-team">${fi(af,m.away)}<div class="hasil-team-name">${esc(m.away)}</div></div>
-          </div>
-          ${done?'<div class="hasil-source">✓ Data Resmi ESPN</div>':""}
-          <div class="hasil-venue">${esc(m.venue)}</div>
-        </article>`;
-      }).join("");
-    }
-
-    /* ---- PREDIKSI FILTERS ---- */
-    function renderPredFilters(){
-      const el=document.getElementById("pred-filters");
-      el.innerHTML=GROUPS.map(g=>`<button class="filter-btn ${g==="ALL"?"is-active":""}" data-pg="${g}">${g==="ALL"?"Semua":"Grup "+g}</button>`).join("");
-      el.querySelectorAll("[data-pg]").forEach(btn=>btn.addEventListener("click",()=>{
-        el.querySelectorAll(".filter-btn").forEach(b=>b.classList.remove("is-active"));
-        btn.classList.add("is-active");CURRENT_PRED_GROUP=btn.dataset.pg;renderPredictions();
-      }));
-    }
-
-    function renderPredictions(){
-      const src=CURRENT_PRED_GROUP==="ALL"
-        ?getUpcoming().slice(0,12)
-        :WORLD_CUP_FIXTURES.filter(m=>m.group===CURRENT_PRED_GROUP);
-      document.getElementById("prediction-list").innerHTML=src.map(m=>{
-        const p=calcPred(m);
-        const hf=flagUrl(m.home),af=flagUrl(m.away);
-        const fi=(url,n)=>url?`<img class="pred-flag" src="${url}" alt="${esc(n)}">`:`<span style="font-size:22px;display:block;text-align:center">🏳</span>`;
-        const winText=p.winner==="Imbang"?"Draw / Imbang":esc(p.winner);
-        return`<article class="pred-card">
-          <div class="pred-top">
-            <span class="pred-group-badge">Grup ${m.group}</span>
-            <span class="pred-date">${fmtShort(m.iso)}</span>
-          </div>
-          <div class="pred-teams">
-            <div style="flex:1;text-align:center;">${fi(hf,m.home)}<div class="pred-team-name">${esc(m.home)}</div></div>
-            <div class="pred-vs">VS</div>
-            <div style="flex:1;text-align:center;">${fi(af,m.away)}<div class="pred-team-name">${esc(m.away)}</div></div>
-          </div>
-          <div class="pred-winner-box">
-            <div class="pred-winner-label">Prediksi Pemenang</div>
-            <div class="pred-winner-val">${winText}</div>
-          </div>
-          <div class="pred-score-row">
-            <span class="pred-score-label">Prediksi Skor</span>
-            <span class="pred-score-val">${p.score}</span>
-          </div>
-          <div class="pred-bars">
-            <div class="pred-bar-row"><span>Home</span><div class="pred-bar-track"><div class="pred-bar-fill" style="width:${p.pct.h}%"></div></div><b>${p.pct.h}%</b></div>
-            <div class="pred-bar-row"><span>Draw</span><div class="pred-bar-track"><div class="pred-bar-fill" style="width:${p.pct.d}%"></div></div><b>${p.pct.d}%</b></div>
-            <div class="pred-bar-row"><span>Away</span><div class="pred-bar-track"><div class="pred-bar-fill" style="width:${p.pct.a}%"></div></div><b>${p.pct.a}%</b></div>
-          </div>
-        </article>`;
-      }).join("");
-    }
-
-    /* ---- ESPN AUTO UPDATE ---- */
-    const ESPN_URLS=[
-      "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard",
-      "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260611-20260703"
-    ];
-
-    function setStatus(txt,type="warn"){
-      const el=document.getElementById("live-update-status");
-      if(!el)return;el.textContent=txt;el.className="auto-status "+type;
-    }
-
-    function norm(name){
-      return String(name||"").toUpperCase().replace(/\./g,"").replace(/\s+/g," ").trim()
-        .replace("CANADA","KANADA").replace("UNITED STATES","AMERIKA SERIKAT")
-        .replace("USA","AMERIKA SERIKAT").replace("SOUTH AFRICA","AFRIKA SELATAN")
-        .replace("IVORY COAST","PANTAI GADING").replace("COTE D IVOIRE","PANTAI GADING")
-        .replace("COTE DIVOIRE","PANTAI GADING").replace("FRANCE","PRANCIS")
-        .replace("SPAIN","SPANYOL").replace("GERMANY","JERMAN")
-        .replace("ITALY","ITALIA").replace("ENGLAND","INGGRIS").replace("NETHERLANDS","BELANDA")
-        .replace("MOROCCO","MAROKO").replace("ALGERIA","ALJAZAIR").replace("EGYPT","MESIR")
-        .replace("CAMEROON","KAMERUN").replace("COLOMBIA","KOLOMBIA").replace("CROATIA","KROASIA")
-        .replace("BELGIUM","BELGIA").replace("JAPAN","JEPANG").replace("SOUTH KOREA","KOREA SELATAN")
-        .replace("KOREA REPUBLIC","KOREA SELATAN").replace("SAUDI ARABIA","ARAB SAUDI")
-        .replace("ECUADOR","EKUADOR").replace("COSTA RICA","KOSTA RIKA")
-        .replace("SCOTLAND","SKOTLANDIA").replace("POLAND","POLANDIA")
-        .replace("NEW ZEALAND","SELANDIA BARU").replace("IRAQ","IRAK").replace("CZECH REPUBLIC","CZECHIA").replace("SWITZERLAND","SWISS").replace("BOSNIA AND HERZEGOVINA","BOSNIA & HERZEGOVINA").replace("TURKEY","TURKI").replace("SWEDEN","SWEDIA").replace("CAPE VERDE","CAPE VERDE").replace("NORWAY","NORWEGIA").replace("DR CONGO","RD KONGO");
-    }
-
-    function findFixture(h,a){
-      const hn=norm(h),an=norm(a);
-      return WORLD_CUP_FIXTURES.find(m=>(norm(m.home)===hn&&norm(m.away)===an)||(norm(m.home)===an&&norm(m.away)===hn));
-    }
-
-    function parseEspn(payload){
-      const out=[];
-      (payload?.events||[]).forEach(ev=>{
-        const comp=ev.competitions?.[0];
-        const status=comp?.status?.type||{};
-        const done=status.completed||status.name==="STATUS_FINAL"||status.state==="post";
-        if(!done)return;
-        const teams=comp?.competitors||[];if(teams.length<2)return;
-        const hC=teams.find(t=>t.homeAway==="home")||teams[0];
-        const aC=teams.find(t=>t.homeAway==="away")||teams[1];
-        const fx=findFixture(
-          hC.team?.displayName||hC.team?.name||"",
-          aC.team?.displayName||aC.team?.name||""
-        );
-        if(!fx)return;
-        out.push({group:fx.group,iso:ev.date||fx.iso,home:fx.home,away:fx.away,
-          score:`${Number(hC.score??0)} - ${Number(aC.score??0)}`,source:"AUTO"});
-      });
-      return out;
-    }
-
-    async function fetchResults(){
-      const found=[];
-      for(const url of ESPN_URLS){
-        try{
-          const r=await fetch(url,{cache:"no-store"});
-          if(!r.ok)continue;
-          found.push(...parseEspn(await r.json()));
-        }catch(e){}
-      }
-      const uniq=[];const seen=new Set();
-      found.forEach(r=>{
-        const k=norm(r.home)+"__"+norm(r.away);
-        if(!seen.has(k)){seen.add(k);uniq.push(r);}
-      });
-      if(uniq.length){
-        RESULTS=uniq.sort((a,b)=>new Date(a.iso)-new Date(b.iso));
-        setStatus(`Update berhasil — ${uniq.length} pertandingan selesai.`,"ok");
-      }else{
-        setStatus("Menunggu data — pertandingan belum dimulai atau data belum tersedia.","warn");
-      }
-      renderResults();
-      renderGroupTable(CURRENT_GROUP_TABLE);
-      renderMatches(document.querySelector("#schedule-filters .is-active")?.dataset.grp||"ALL");
-    }
-
-    /* ---- KLASEMEN ---- */
-    function buildStandings(group){
-      const t={};
-      const ensure=n=>{t[n]||(t[n]={team:n,main:0,w:0,d:0,l:0,gf:0,ga:0,pts:0})};
-      WORLD_CUP_FIXTURES.filter(m=>m.group===group).forEach(m=>{ensure(m.home);ensure(m.away)});
-      RESULTS.filter(r=>r.group===group).forEach(r=>{
-        ensure(r.home);ensure(r.away);
-        const pts=r.score.split("-").map(x=>parseInt(x.trim(),10));
-        const hg=pts[0]||0,ag=pts[1]||0;
-        t[r.home].main++;t[r.away].main++;
-        t[r.home].gf+=hg;t[r.home].ga+=ag;
-        t[r.away].gf+=ag;t[r.away].ga+=hg;
-        if(hg>ag){t[r.home].w++;t[r.home].pts+=3;t[r.away].l++;}
-        else if(ag>hg){t[r.away].w++;t[r.away].pts+=3;t[r.home].l++;}
-        else{t[r.home].d++;t[r.away].d++;t[r.home].pts++;t[r.away].pts++;}
-      });
-      return Object.values(t).sort((a,b)=>b.pts-a.pts||(b.gf-b.ga)-(a.gf-a.ga)||b.gf-a.gf);
-    }
-
-    function renderGroupTabs(){
-      const el=document.getElementById("group-tabs");
-      el.innerHTML=GROUPS.filter(g=>g!=="ALL").map(g=>`<button class="filter-btn ${g==="A"?"is-active":""}" data-gt="${g}">Grup ${g}</button>`).join("");
-      el.querySelectorAll("[data-gt]").forEach(btn=>btn.addEventListener("click",()=>{
-        el.querySelectorAll(".filter-btn").forEach(b=>b.classList.remove("is-active"));
-        btn.classList.add("is-active");CURRENT_GROUP_TABLE=btn.dataset.gt;renderGroupTable(CURRENT_GROUP_TABLE);
-      }));
-    }
-
-    function renderGroupTable(group="A"){
-      CURRENT_GROUP_TABLE=group;
-      const rows=buildStandings(group);
-      document.getElementById("group-table").innerHTML=rows.map((r,i)=>{
-        const gd=r.gf-r.ga;
-        return`<tr ${i<2?"style='background:rgba(245,196,0,.07)'":`style='''`}>
-          <td>${i+1}</td><td>${teamBlock(r.team)}</td>
-          <td>${r.main}</td><td>${r.w}</td><td>${r.d}</td><td>${r.l}</td>
-          <td>${r.gf}</td><td>${r.ga}</td>
-          <td style="color:${gd>0?"#4caf50":gd<0?"#f44336":"#aaa"}">${gd>0?"+":""}${gd}</td>
-          <td><b style="color:var(--gold);font-size:15px;">${r.pts}</b></td>
-        </tr>`;
-      }).join("");
-    }
-
-    /* ---- KALKULATOR ---- */
-    let legs=[1.80,1.95,2.10];
-    function renderCalc(){
-      document.getElementById("odds-list").innerHTML=legs.map((odd,i)=>`
-        <div class="odds-item">
-          <div class="calc-row" style="margin:0"><label>Partai ${i+1}</label>
-          <input type="number" step="0.01" min="1" value="${odd}" onchange="updateLeg(${i},this.value)"></div>
-          <div></div>
-          <button class="remove-leg" type="button" onclick="removeLeg(${i})">×</button>
-        </div>`).join("");
-      calcParley();
-    }
-    function addLeg(){legs.push(1.80);renderCalc();}
-    function removeLeg(i){legs.splice(i,1);if(!legs.length)legs=[1.80];renderCalc();}
-    function updateLeg(i,v){legs[i]=Number(v)||1;calcParley();}
-    function calcParley(){
-      const stake=Number(document.getElementById("stake").value)||0;
-      const tot=legs.reduce((a,b)=>a*(Number(b)||1),1);
-      const win=stake*tot;
-      document.getElementById("total-odds").textContent=tot.toFixed(2);
-      document.getElementById("potential-win").textContent=rupiah(win);
-      document.getElementById("potential-profit").textContent=rupiah(win-stake);
-    }
-    document.getElementById("stake").addEventListener("input",calcParley);
-
-    /* ---- INIT ---- */
-    renderFilters();
-    renderHasilFilters();
-    renderPredFilters();
-    renderMatches();
-    renderResults();
-    renderPredictions();
-    renderGroupTabs();
-    renderGroupTable("A");
-    renderCalc();
-
-    fetchResults();
-    setInterval(fetchResults, 60*60*1000);
-    setInterval(()=>{
-      renderMatches(document.querySelector("#schedule-filters .is-active")?.dataset.grp||"ALL");
-      renderPredictions();
-      renderResults();
-    }, 30*60*1000);
-    
-  </script>
-  <audio id="bg-music" loop>
-  <source src="https://mp3tourl.com/audio/1781041712890-ef19358e-fc01-4fad-9bc0-a3ba34a17bdd.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-  // Musik akan mulai berputar otomatis begitu user klik di mana saja dalam website
-  document.addEventListener('click', function() {
-    var audio = document.getElementById('bg-music');
-    audio.play();
-  }, { once: true }); // { once: true } memastikan fungsi ini cuma jalan sekali klik pertama
-</script>
 </body>
 </html>
